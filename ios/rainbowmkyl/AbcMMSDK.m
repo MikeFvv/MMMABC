@@ -367,9 +367,9 @@ static const void *switchRouteKEY = &switchRouteKEY;
     
 #ifdef DEBUG
 
-    jsCodeLocation = [CodePush bundleURL];
+//    jsCodeLocation = [CodePush bundleURL];
     
-//    jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
+    jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
     
     //     jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
     
