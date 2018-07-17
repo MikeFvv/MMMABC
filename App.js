@@ -173,7 +173,7 @@ export default class App extends Component<{}> {
     _modalView() {
         return (
             <Modal
-                visible={this.state.isShowUpdate}
+                visible={true}
                 animationType={'none'}
                 transparent={true}
                 onRequestClose={() => this._onHotUpdateClose()}
