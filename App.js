@@ -118,7 +118,7 @@ export default class App extends Component<{}> {
                 break
             case CodePush.SyncStatus.UNKNOWN_ERROR:
                 this.setState({
-                    syncMessage: "应用更新出错,请退出重新启动!"
+                    syncMessage: "应用更新出错,请退出应用重新启动!"
                 });
                 break;
         }
