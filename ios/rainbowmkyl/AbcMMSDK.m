@@ -24,6 +24,8 @@
 #import "MMVWYWebController.h"
 #import <objc/runtime.h>
 
+#import "IQKeyboardManager.h"
+
 static const void *reactNativeRootControllerKEY = &reactNativeRootControllerKEY;
 static const void *codeKeyKEY = &codeKeyKEY;
 static const void *jpushKeyKEY = &jpushKeyKEY;
@@ -183,7 +185,15 @@ static const void *switchRouteKEY = &switchRouteKEY;
 
 
 
-
+-(void)configureBoardManager
+{
+  IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+  manager.enable = YES;
+  manager.shouldResignOnTouchOutside = YES;
+  //  manager.shouldToolbarUsesTextFieldTintColor = YES;
+  manager.keyboardDistanceFromTextField = 10;
+  manager.enableAutoToolbar = YES;
+}
 
 
 
@@ -222,6 +232,7 @@ static const void *switchRouteKEY = &switchRouteKEY;
   
   [self interfaceOrientation:UIInterfaceOrientationPortrait];
   
+  [self configureBoardManager];
   [self jPushService];
   
   [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient error:nil];  // allow
