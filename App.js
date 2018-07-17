@@ -23,15 +23,7 @@ import * as Progress from 'react-native-progress';
 
 let { height, width } = Dimensions.get('window');
 
-// import FPApp from './js/FPApp'
 
-
-const instructions = Platform.select({
-    ios: 'Press Cmd+R to reload,\n' +
-        'Cmd+D or shake for dev menu',
-    android: 'Double tap R on your keyboard to reload,\n' +
-        'Shake or press menu button for dev menu',
-});
 
 export default class App extends Component<{}> {
 
@@ -118,7 +110,7 @@ export default class App extends Component<{}> {
                 break
             case CodePush.SyncStatus.UNKNOWN_ERROR:
                 this.setState({
-                    syncMessage: "应用更新出错,请退出应用重新启动!"
+                    syncMessage: "应用更新出错,请退出App重新启动!"
                 });
                 break;
         }
