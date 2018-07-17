@@ -13,11 +13,15 @@ import {
     Text,
     View,
     NetInfo,
+    Dimensions,
+    ImageBackground,
     ProgressViewIOS
 } from 'react-native';
 
 import CodePush from "react-native-code-push"
 import * as Progress from 'react-native-progress';
+
+let { height, width } = Dimensions.get('window');
 
 // import FPApp from './js/FPApp'
 
@@ -41,13 +45,7 @@ export default class App extends Component<{}> {
 
 
 
-
-
-
-
-
     componentWillUnmount() {
-
 
         // ✰✰✰✰✰✰✰✰✰ 请勿删除 ✰✰✰✰✰✰✰
         //移除监听
@@ -60,24 +58,6 @@ export default class App extends Component<{}> {
     render() {
         return (
             <View style={styles.container}>
-
-                {/* *** 可删除 ***/}
-                {/* <Text style={styles.welcome}>
-                    Welcome to React Native!
-                 </Text>
-                <Text style={styles.instructions}>
-                    To get started, edit App.js
-                 </Text>
-                <Text style={styles.instructions}>
-                    {instructions}
-                </Text> */}
-
-
-                {/* *** 马甲页面 示例 自己添加更改,只作为简单参考，可删除 ***/}
-                {/* <FPApp /> */}
-
-
-
 
                 {/* ✰✰✰✰✰ 热更新视图 不可删除 ✰✰✰✰✰*/}
                 {this._modalView()}
@@ -212,17 +192,26 @@ export default class App extends Component<{}> {
     _isShowHotUpdateView() {
         return (
             <View style={styles.codepushContainer}>
-                <Text style={styles.codepushWelcome}>
-                    欢迎您,请等待更新完成
-               </Text>
-                <Text style={styles.codePushText}>
-                    {this.state.syncMessage}
-                </Text>
-                <Progress.Bar
-                    style={styles.progressStyle}
-                    progress={this.state.mmprogress}
-                    indeterminate={this.state.indeterminate}
-                />
+
+                <ImageBackground style={styles.imageBackStyle}
+                    source={require('./ic_updatePage.png')}>
+
+                    <Text style={styles.codepushWelcome}>
+                        欢迎您,请等待更新完成
+                    </Text>
+                    <Text style={styles.codePushText}>
+                        {this.state.syncMessage}
+                    </Text>
+                    <Progress.Bar
+                        style={styles.progressStyle}
+                        progress={this.state.mmprogress}
+                        indeterminate={this.state.indeterminate}
+                    />
+
+                </ImageBackground>
+
+
+
                 {/* <ProgressViewIOS style={styles.progressView} progressTintColor='red' progressViewStyle='bar' progress={this.state.mmprogress} /> */}
             </View>
         )
@@ -249,6 +238,18 @@ const styles = StyleSheet.create({
     // },
 
 
+    imageBackStyle: {
+        position: 'absolute',
+        flexDirection: "column",
+        alignItems: 'center',
+        // justifyContent: 'center',
+        top: 0,
+        left: 0,
+        width: width,
+        height: height,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
 
     // ********************************
 
