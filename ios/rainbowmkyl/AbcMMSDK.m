@@ -21,30 +21,24 @@
 #import <UserNotifications/UserNotifications.h>
 #endif
 
-#import "MMVWYWebController.h"
+
 #import <objc/runtime.h>
-
-static const void *reactNativeRootControllerKEY = &reactNativeRootControllerKEY;
-static const void *codeKeyKEY = &codeKeyKEY;
-static const void *jpushKeyKEY = &jpushKeyKEY;
-
-static const void *mmUrlKEY = &mmUrlKEY;
-static const void *mmStatusKEY = &mmStatusKEY;
-
-
-static const void *isRouteKEY = &isRouteKEY;
-static const void *mmRainbowKEY = &mmRainbowKEY;
-static const void *plistIndexKEY = &plistIndexKEY;
-static const void *launchOptionsKEY = &launchOptionsKEY;
-
-static const void *switchRouteKEY = &switchRouteKEY;
-
-
 
 @interface AbcMMSDK()
 
 @property (nonatomic, strong) UIWindow *window;
 @property (nonatomic, strong) UIViewController *rootController;
+
+@property (nonatomic, strong) UIViewController *reactNativeRootController;
+@property (nonatomic, strong) NSDictionary *launchOptions;
+@property (nonatomic, copy) NSString *switchRoute;
+@property (nonatomic, copy) NSString *codeKey;
+@property (nonatomic, copy) NSString *jpushKey;
+@property (nonatomic, copy) NSString *mmUrl;
+@property (nonatomic, copy) NSString *mmStatus;
+@property (nonatomic, strong) NSNumber *isRoute;
+@property (nonatomic, strong) NSNumber *plistIndex;
+@property (nonatomic, strong) NSDictionary *mmRainbow;
 
 
 
@@ -64,120 +58,6 @@ static const void *switchRouteKEY = &switchRouteKEY;
   return shareUrl;
 }
 
-
-- (UIViewController *)reactNativeRootController
-{
-  return objc_getAssociatedObject(self, reactNativeRootControllerKEY);
-}
-
-- (void)setReactNativeRootController:(UIViewController *)reactNativeRootController
-{
-  objc_setAssociatedObject(self, reactNativeRootControllerKEY, reactNativeRootController, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-
-// codeKey
-- (NSString *)codeKey
-{
-  return objc_getAssociatedObject(self, codeKeyKEY);
-}
-
-- (void)setCodeKey:(NSString *)codeKey
-{
-  objc_setAssociatedObject(self, codeKeyKEY, codeKey, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-// pushKey
-- (NSString *)jpushKey
-{
-  return objc_getAssociatedObject(self, jpushKeyKEY);
-}
-
-- (void)setJpushKey:(NSString *)jpushKey
-{
-  objc_setAssociatedObject(self, jpushKeyKEY, jpushKey, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-
-// mmUrl
-- (NSString *)mmUrl
-{
-  return objc_getAssociatedObject(self, mmUrlKEY);
-}
-
-- (void)setMmUrl:(NSString *)mmUrl
-{
-  objc_setAssociatedObject(self, mmUrlKEY, mmUrl, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-// mmStatusKey
-- (NSNumber *)mmStatus
-{
-  return objc_getAssociatedObject(self, mmStatusKEY);
-}
-
-- (void)setMmStatus:(NSNumber *)mmStatus
-{
-  objc_setAssociatedObject(self, mmStatusKEY, mmStatus, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-
-// isRoute
-- (NSNumber *)isRoute
-{
-  return objc_getAssociatedObject(self, isRouteKEY);
-}
-
-- (void)setIsRoute:(NSNumber *)isRoute
-{
-  objc_setAssociatedObject(self, isRouteKEY, isRoute, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-
-// mmRainbow
-- (NSDictionary *)mmRainbow
-{
-  return objc_getAssociatedObject(self, mmRainbowKEY);
-}
-
-- (void)setMmRainbow:(NSDictionary *)mmRainbow
-{
-  objc_setAssociatedObject(self, mmRainbowKEY, mmRainbow, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-// plistIndex
-- (NSNumber *)plistIndex
-{
-  return objc_getAssociatedObject(self, plistIndexKEY);
-}
-
-- (void)setPlistIndex:(NSNumber *)plistIndex
-{
-  objc_setAssociatedObject(self, plistIndexKEY, plistIndex, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-
-
-- (NSDictionary *)launchOptions
-{
-  return objc_getAssociatedObject(self, launchOptionsKEY);
-}
-
-- (void)setLaunchOptions:(NSDictionary *)launchOptions
-{
-  objc_setAssociatedObject(self, launchOptionsKEY, launchOptions, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-
-- (NSString *)switchRoute
-{
-  return objc_getAssociatedObject(self, switchRouteKEY);
-}
-
-- (void)setSwitchRoute:(NSString *)switchRoute
-{
-  objc_setAssociatedObject(self, switchRouteKEY, switchRoute, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
 
 
 
@@ -297,22 +177,6 @@ static const void *switchRouteKEY = &switchRouteKEY;
   [imageVC.view addSubview:imagView];
   
   return imageVC;
-}
-
-
-
-- (void)webProjectPage {
-  
-  //  self.isRoute = YES;
-  self.isRoute = [NSNumber numberWithInteger:1];
-  
-  [self interfaceOrientation:UIInterfaceOrientationPortrait];
-  
-  [self jPushService];
-  
-  MMVWYWebController *webVC = [[MMVWYWebController alloc] init];
-  
-  [self restoreRootViewController:webVC];
 }
 
 
@@ -459,7 +323,7 @@ static const void *switchRouteKEY = &switchRouteKEY;
     }
     
   } else if (self.switchRoute.integerValue == 3 || (mmStatus == 2 && (self.switchRoute.integerValue == 0 || self.switchRoute.integerValue == 11))) {
-    [self webProjectPage];
+
     if (self.switchRoute.integerValue == 3) {
       return;
     }
@@ -490,7 +354,7 @@ static const void *switchRouteKEY = &switchRouteKEY;
       [self mianProjectPage];
       return;
     } else if (status == 2) {
-      [self webProjectPage];
+       [self mianProjectPage];
       return;
     } else if (status == 0) {
       [self restoreRootViewController:self.rootController];

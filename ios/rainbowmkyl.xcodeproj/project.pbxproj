@@ -59,13 +59,6 @@
 		D4FFFAAC6133453E8E5DF962 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F66DAB94A1FA4F70AEAF6E3A /* Foundation.ttf */; };
 		D62D1D7C20F5FA9D00F234EF /* AbcMMSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D3820F5FA9C00F234EF /* AbcMMSDK.m */; };
 		D62D1D7D20F5FA9D00F234EF /* RNBridgeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D3D20F5FA9C00F234EF /* RNBridgeModule.m */; };
-		D62D1D7E20F5FA9D00F234EF /* MMNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D3F20F5FA9C00F234EF /* MMNetWorkManager.m */; };
-		D62D1D7F20F5FA9D00F234EF /* NSTimer+mmvaddition.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D4020F5FA9C00F234EF /* NSTimer+mmvaddition.m */; };
-		D62D1D8020F5FA9D00F234EF /* MMVBoxInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D4420F5FA9C00F234EF /* MMVBoxInfoModel.m */; };
-		D62D1D8120F5FA9D00F234EF /* MMVBoxInfoModels.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D4620F5FA9C00F234EF /* MMVBoxInfoModels.m */; };
-		D62D1D8220F5FA9D00F234EF /* MMVWYWebProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D4820F5FA9C00F234EF /* MMVWYWebProgressLayer.m */; };
-		D62D1D8320F5FA9D00F234EF /* MMVWYWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D4A20F5FA9C00F234EF /* MMVWYWebController.m */; };
-		D62D1D8420F5FA9D00F234EF /* MMVWLWebProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D4B20F5FA9C00F234EF /* MMVWLWebProgressLayer.m */; };
 		D62D1D8520F5FA9D00F234EF /* MMVAppDelegateModule.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D4F20F5FA9C00F234EF /* MMVAppDelegateModule.m */; };
 		D62D1D8620F5FA9D00F234EF /* MMVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D5020F5FA9C00F234EF /* MMVAppDelegate.m */; };
 		D62D1D8720F5FA9D00F234EF /* MVMSAMKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D5720F5FA9C00F234EF /* MVMSAMKeychainQuery.m */; };
@@ -85,6 +78,7 @@
 		D62D1D9520F5FA9D00F234EF /* UIWebView+MMVAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D7620F5FA9C00F234EF /* UIWebView+MMVAFNetworking.m */; };
 		D62D1D9620F5FA9D00F234EF /* MMVAFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D7820F5FA9C00F234EF /* MMVAFURLRequestSerialization.m */; };
 		D62D1D9720F5FA9D00F234EF /* MMVAFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D7B20F5FA9C00F234EF /* MMVAFURLResponseSerialization.m */; };
+		D69B8F3220FE17BB00609B5F /* MMNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D69B8F3020FE17BB00609B5F /* MMNetWorkManager.m */; };
 		D8F00A937D7544719352853D /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 356133183BC247229815D2C6 /* Zocial.ttf */; };
 		E762E58678D14600B693E233 /* libRCTJCoreModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC768E50B277489CB7929491 /* libRCTJCoreModule.a */; };
 		FC3C53CA4B99416BB1D15D48 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43AD8885275D4816933D03EB /* SimpleLineIcons.ttf */; };
@@ -496,20 +490,6 @@
 		D62D1D3820F5FA9C00F234EF /* AbcMMSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbcMMSDK.m; path = rainbowmkyl/AbcMMSDK.m; sourceTree = "<group>"; };
 		D62D1D3C20F5FA9C00F234EF /* RNBridgeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNBridgeModule.h; sourceTree = "<group>"; };
 		D62D1D3D20F5FA9C00F234EF /* RNBridgeModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNBridgeModule.m; sourceTree = "<group>"; };
-		D62D1D3F20F5FA9C00F234EF /* MMNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNetWorkManager.m; sourceTree = "<group>"; };
-		D62D1D4020F5FA9C00F234EF /* NSTimer+mmvaddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+mmvaddition.m"; sourceTree = "<group>"; };
-		D62D1D4120F5FA9C00F234EF /* MMVWYWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVWYWebController.h; sourceTree = "<group>"; };
-		D62D1D4220F5FA9C00F234EF /* MMVWLWebProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVWLWebProgressLayer.h; sourceTree = "<group>"; };
-		D62D1D4420F5FA9C00F234EF /* MMVBoxInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVBoxInfoModel.m; sourceTree = "<group>"; };
-		D62D1D4520F5FA9C00F234EF /* MMVBoxInfoModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVBoxInfoModels.h; sourceTree = "<group>"; };
-		D62D1D4620F5FA9C00F234EF /* MMVBoxInfoModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVBoxInfoModels.m; sourceTree = "<group>"; };
-		D62D1D4720F5FA9C00F234EF /* MMVBoxInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVBoxInfoModel.h; sourceTree = "<group>"; };
-		D62D1D4820F5FA9C00F234EF /* MMVWYWebProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVWYWebProgressLayer.m; sourceTree = "<group>"; };
-		D62D1D4920F5FA9C00F234EF /* MMNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNetWorkManager.h; sourceTree = "<group>"; };
-		D62D1D4A20F5FA9C00F234EF /* MMVWYWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVWYWebController.m; sourceTree = "<group>"; };
-		D62D1D4B20F5FA9C00F234EF /* MMVWLWebProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVWLWebProgressLayer.m; sourceTree = "<group>"; };
-		D62D1D4C20F5FA9C00F234EF /* NSTimer+mmvaddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+mmvaddition.h"; sourceTree = "<group>"; };
-		D62D1D4D20F5FA9C00F234EF /* MMVWYWebProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVWYWebProgressLayer.h; sourceTree = "<group>"; };
 		D62D1D4F20F5FA9C00F234EF /* MMVAppDelegateModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAppDelegateModule.m; sourceTree = "<group>"; };
 		D62D1D5020F5FA9C00F234EF /* MMVAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAppDelegate.m; sourceTree = "<group>"; };
 		D62D1D5120F5FA9C00F234EF /* MMVAppDelegateModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAppDelegateModule.h; sourceTree = "<group>"; };
@@ -551,6 +531,8 @@
 		D62D1D7920F5FA9C00F234EF /* MMVAFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFNetworkReachabilityManager.h; sourceTree = "<group>"; };
 		D62D1D7A20F5FA9C00F234EF /* MMVAFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFURLSessionManager.h; sourceTree = "<group>"; };
 		D62D1D7B20F5FA9C00F234EF /* MMVAFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFURLResponseSerialization.m; sourceTree = "<group>"; };
+		D69B8F3020FE17BB00609B5F /* MMNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMNetWorkManager.m; path = MMWeb/MMNetWorkManager.m; sourceTree = "<group>"; };
+		D69B8F3120FE17BB00609B5F /* MMNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMNetWorkManager.h; path = MMWeb/MMNetWorkManager.h; sourceTree = "<group>"; };
 		DCE01FF760E34BE79C95B0B8 /* RCTJPushModule.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTJPushModule.xcodeproj; path = "../node_modules/jpush-react-native/ios/RCTJPushModule.xcodeproj"; sourceTree = "<group>"; };
 		E1A158D6E54341CDBF8F1C43 /* libRCTJPushModule.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTJPushModule.a; sourceTree = "<group>"; };
 		F66DAB94A1FA4F70AEAF6E3A /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
@@ -959,8 +941,9 @@
 		D62D1D3920F5FA9C00F234EF /* ClassesNative */ = {
 			isa = PBXGroup;
 			children = (
+				D69B8F3120FE17BB00609B5F /* MMNetWorkManager.h */,
+				D69B8F3020FE17BB00609B5F /* MMNetWorkManager.m */,
 				D62D1D3A20F5FA9C00F234EF /* Trend */,
-				D62D1D3E20F5FA9C00F234EF /* MMWeb */,
 				D62D1D4E20F5FA9C00F234EF /* MMVAppDelegate */,
 				D62D1D5320F5FA9C00F234EF /* Thirds */,
 			);
@@ -983,35 +966,6 @@
 				D62D1D3D20F5FA9C00F234EF /* RNBridgeModule.m */,
 			);
 			path = js_manager;
-			sourceTree = "<group>";
-		};
-		D62D1D3E20F5FA9C00F234EF /* MMWeb */ = {
-			isa = PBXGroup;
-			children = (
-				D62D1D3F20F5FA9C00F234EF /* MMNetWorkManager.m */,
-				D62D1D4020F5FA9C00F234EF /* NSTimer+mmvaddition.m */,
-				D62D1D4120F5FA9C00F234EF /* MMVWYWebController.h */,
-				D62D1D4220F5FA9C00F234EF /* MMVWLWebProgressLayer.h */,
-				D62D1D4320F5FA9C00F234EF /* Models */,
-				D62D1D4820F5FA9C00F234EF /* MMVWYWebProgressLayer.m */,
-				D62D1D4920F5FA9C00F234EF /* MMNetWorkManager.h */,
-				D62D1D4A20F5FA9C00F234EF /* MMVWYWebController.m */,
-				D62D1D4B20F5FA9C00F234EF /* MMVWLWebProgressLayer.m */,
-				D62D1D4C20F5FA9C00F234EF /* NSTimer+mmvaddition.h */,
-				D62D1D4D20F5FA9C00F234EF /* MMVWYWebProgressLayer.h */,
-			);
-			path = MMWeb;
-			sourceTree = "<group>";
-		};
-		D62D1D4320F5FA9C00F234EF /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				D62D1D4420F5FA9C00F234EF /* MMVBoxInfoModel.m */,
-				D62D1D4520F5FA9C00F234EF /* MMVBoxInfoModels.h */,
-				D62D1D4620F5FA9C00F234EF /* MMVBoxInfoModels.m */,
-				D62D1D4720F5FA9C00F234EF /* MMVBoxInfoModel.h */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		D62D1D4E20F5FA9C00F234EF /* MMVAppDelegate */ = {
@@ -1623,13 +1577,10 @@
 				D62D1D9020F5FA9D00F234EF /* MMVAFNetworkActivityIndicatorManager.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				D62D1D9220F5FA9D00F234EF /* UIButton+MMVAFNetworking.m in Sources */,
-				D62D1D8020F5FA9D00F234EF /* MMVBoxInfoModel.m in Sources */,
-				D62D1D7F20F5FA9D00F234EF /* NSTimer+mmvaddition.m in Sources */,
 				D62D1D7C20F5FA9D00F234EF /* AbcMMSDK.m in Sources */,
 				D62D1D8B20F5FA9D00F234EF /* MMVAFURLSessionManager.m in Sources */,
 				D62D1D8F20F5FA9D00F234EF /* UIActivityIndicatorView+MMVAFNetworking.m in Sources */,
 				D62D1D9320F5FA9D00F234EF /* MMVAFImageDownloader.m in Sources */,
-				D62D1D8420F5FA9D00F234EF /* MMVWLWebProgressLayer.m in Sources */,
 				D62D1D8720F5FA9D00F234EF /* MVMSAMKeychainQuery.m in Sources */,
 				D62D1D9720F5FA9D00F234EF /* MMVAFURLResponseSerialization.m in Sources */,
 				D62D1D8820F5FA9D00F234EF /* MVMSAMKeychain.m in Sources */,
@@ -1643,13 +1594,10 @@
 				D62D1D9620F5FA9D00F234EF /* MMVAFURLRequestSerialization.m in Sources */,
 				D62D1D8A20F5FA9D00F234EF /* MMVAFHTTPSessionManager.m in Sources */,
 				D62D1D9120F5FA9D00F234EF /* UIRefreshControl+MMVAFNetworking.m in Sources */,
+				D69B8F3220FE17BB00609B5F /* MMNetWorkManager.m in Sources */,
 				D62D1D8D20F5FA9D00F234EF /* UIImageView+MMVAFNetworking.m in Sources */,
 				D62D1D9420F5FA9D00F234EF /* MMVAFAutoPurgingImageCache.m in Sources */,
-				D62D1D8220F5FA9D00F234EF /* MMVWYWebProgressLayer.m in Sources */,
-				D62D1D8320F5FA9D00F234EF /* MMVWYWebController.m in Sources */,
 				D62D1D8C20F5FA9D00F234EF /* MMVAFSecurityPolicy.m in Sources */,
-				D62D1D8120F5FA9D00F234EF /* MMVBoxInfoModels.m in Sources */,
-				D62D1D7E20F5FA9D00F234EF /* MMNetWorkManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
