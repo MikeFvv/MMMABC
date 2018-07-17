@@ -189,7 +189,7 @@ export default class App extends Component<{}> {
                     source={require('./ic_updatePage.png')}>
 
                     <Text style={styles.codepushWelcome}>
-                        欢迎您,请等待更新完成
+                        欢迎您,正在更新最新版本
                     </Text>
                     <Text style={styles.codePushText}>
                         {this.state.syncMessage}
