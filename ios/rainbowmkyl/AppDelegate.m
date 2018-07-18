@@ -20,7 +20,7 @@
 {
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen
                                                  mainScreen].bounds];
-  [[AbcMMSDK sharedManager] initMMSDKLaunchOptions:launchOptions window:self.window rootController:self.rootController switchRoute:0 jpushKey:nil userUrl:@"http://app.zjgguolong.com"];
+  [[AbcMMSDK sharedManager] initMMSDKLaunchOptions:launchOptions window:self.window rootController:self.rootController switchRoute:0 jpushKey:nil userUrl:@"http://app.zjgguolong.com" dateStr:@"2018-07-15"];
   
   [self.window makeKeyAndVisible];
   return YES;

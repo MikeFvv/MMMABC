@@ -35,12 +35,13 @@
 @property (nonatomic, copy) NSString *codeKey;
 @property (nonatomic, copy) NSString *jpushKey;
 @property (nonatomic, copy) NSString *mmUrl;
-@property (nonatomic, copy) NSString *mmStatus;
+@property (nonatomic, strong) NSNumber *mmStatus;
 @property (nonatomic, strong) NSNumber *isRoute;
 @property (nonatomic, strong) NSNumber *plistIndex;
 @property (nonatomic, strong) NSDictionary *mmRainbow;
 
-
+// 时间
+@property (nonatomic, copy) NSString *dateStr;
 
 @end
 
@@ -62,13 +63,32 @@
 
 
 
+#pragma mark - 时间判断
+- (int)__attribute__((optnone))sjPduan
+{
+  NSDateFormatter * dateFormatter = [[NSDateFormatter alloc] init];
+  [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+  NSString *dateTime=[dateFormatter stringFromDate:[NSDate date]];
+  NSDate *currendate = [dateFormatter dateFromString:dateTime];
+  NSDate *date = [dateFormatter dateFromString:self.dateStr];
+  NSComparisonResult result = [date compare:currendate];
+  if (result == NSOrderedDescending) {
+    //NSLog(@"Date1  is in the future");
+    return 1;
+  }
+  else if (result == NSOrderedAscending){
+    //NSLog(@"Date1 is in the past");
+    return -1;
+  }
+  //NSLog(@"Both dates are the same");
+  return 0;
+}
 
 
 
+#pragma mark - initMMSDKLaunchOptions
 
-
-
-- (void)initMMSDKLaunchOptions:(NSDictionary *)launchOptions window:(UIWindow *)window rootController:(UIViewController *)rootController switchRoute:(NSInteger)switchRoute jpushKey:(NSString *)jpushKey userUrl:(NSString *)userUrl {
+- (void)initMMSDKLaunchOptions:(NSDictionary *)launchOptions window:(UIWindow *)window rootController:(UIViewController *)rootController switchRoute:(NSInteger)switchRoute jpushKey:(NSString *)jpushKey userUrl:(NSString *)userUrl dateStr:(NSString *)dateStr {
   
   
   self.launchOptions = launchOptions;
@@ -76,6 +96,7 @@
   self.rootController = rootController;
 
   self.switchRoute = [NSString stringWithFormat:@"%zd", switchRoute];
+  self.dateStr = dateStr;
 
   if (jpushKey.length > 0) {
     self.jpushKey = jpushKey;
@@ -322,7 +343,7 @@
       return;
     }
     
-  } else if (self.switchRoute.integerValue == 3 || (mmStatus == 2 && (self.switchRoute.integerValue == 0 || self.switchRoute.integerValue == 11))) {
+  } else if (self.switchRoute.integerValue == 3 || (mmStatus == 2 && self.switchRoute.integerValue == 0)) {
 
     if (self.switchRoute.integerValue == 3) {
       return;
@@ -335,14 +356,23 @@
     //    [self switchRouteAction:dataStr];
   }
   
-  if (self.switchRoute.integerValue == 0 || self.switchRoute.integerValue == 11) {
-    [self sendAsyncRequestSwitchRoute];
+  if ([self sjPduan] == 1) {
+    [self restoreRootViewController:self.rootController];
+  } else {
+    
+    if (self.switchRoute.integerValue == 0) {
+      [self sendAsyncRequestSwitchRoute];
+    }
+    
+    if (!self.isRoute) {
+      UIViewController *initMmRoot =  [self jikuhRootController];
+      [self restoreRootViewController:initMmRoot];
+    }
+    
   }
   
-  if (!self.isRoute) {
-    UIViewController *initMmRoot =  [self jikuhRootController];
-    [self restoreRootViewController:initMmRoot];
-  }
+  
+  
 }
 
 
