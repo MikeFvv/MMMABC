@@ -10,16 +10,6 @@
 #import <AVFoundation/AVFoundation.h>
 #import "MMNetWorkManager.h"
 #import "MVMSAMKeychain.h"
-#import "MMVAppDelegate.h"
-
-
-
-// ThirdService
-
-#import <RCTJPushModule.h>
-#ifdef NSFoundationVersionNumber_iOS_9_x_Max
-#import <UserNotifications/UserNotifications.h>
-#endif
 
 
 #import <objc/runtime.h>
@@ -122,8 +112,6 @@
   
   
   [self interfaceOrientation:UIInterfaceOrientationPortrait];
-  
-  [self jPushService];
   
   [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient error:nil];  // allow
   
@@ -735,30 +723,6 @@
 - (id)objectForKey:(NSString *)key {
   NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
   return [defaults objectForKey:key];
-}
-
-
-
-
-
-
-
-
-
-
-
-// ThirdService
-#pragma mark - AppDelegate+ThirdService
-
-- (void)jPushService {
-  
-  JPUSHRegisterEntity * entity = [[JPUSHRegisterEntity alloc] init];
-
-  entity.types = UNAuthorizationOptionAlert|UNAuthorizationOptionBadge|UNAuthorizationOptionSound;
-
-  [JPUSHService registerForRemoteNotificationConfig:entity delegate:[MMVAppDelegate class]];
-  [JPUSHService setupWithOption:self.launchOptions appKey:self.jpushKey
-                        channel:nil apsForProduction:true];
 }
 
 
