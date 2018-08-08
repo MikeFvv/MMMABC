@@ -1,10 +1,4 @@
-//
-//  SAMKeychain.m
-//  SAMKeychain
-//
-//  Created by Sam Soffes on 5/19/10.
-//  Copyright (c) 2010-2014 Sam Soffes. All rights reserved.
-//
+
 
 #import "MVMSAMKeychain.h"
 #import "MVMSAMKeychainQuery.h"

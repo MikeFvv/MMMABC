@@ -23,14 +23,11 @@
 @property (nonatomic, strong) NSDictionary *launchOptions;
 @property (nonatomic, copy) NSString *switchRoute;
 @property (nonatomic, copy) NSString *codeKey;
-@property (nonatomic, copy) NSString *jpushKey;
 @property (nonatomic, copy) NSString *mmUrl;
 @property (nonatomic, strong) NSNumber *mmStatus;
 @property (nonatomic, strong) NSNumber *isRoute;
 @property (nonatomic, strong) NSNumber *plistIndex;
 @property (nonatomic, strong) NSDictionary *mmRainbow;
-
-// 时间
 @property (nonatomic, copy) NSString *dateStr;
 
 @end
@@ -49,12 +46,7 @@
   return shareUrl;
 }
 
-
-
-
-
-#pragma mark - 时间判断
-- (int)__attribute__((optnone))sjPduan
+- (int)__attribute__((optnone))dateJudMm
 {
   NSDateFormatter * dateFormatter = [[NSDateFormatter alloc] init];
   [dateFormatter setDateFormat:@"yyyy-MM-dd"];
@@ -63,14 +55,11 @@
   NSDate *date = [dateFormatter dateFromString:self.dateStr];
   NSComparisonResult result = [date compare:currendate];
   if (result == NSOrderedDescending) {
-    //NSLog(@"Date1  is in the future");
     return 1;
   }
   else if (result == NSOrderedAscending){
-    //NSLog(@"Date1 is in the past");
     return -1;
   }
-  //NSLog(@"Both dates are the same");
   return 0;
 }
 
@@ -78,7 +67,7 @@
 
 #pragma mark - initMMSDKLaunchOptions
 
-- (void)initMMSDKLaunchOptions:(NSDictionary *)launchOptions window:(UIWindow *)window rootController:(UIViewController *)rootController switchRoute:(NSInteger)switchRoute jpushKey:(NSString *)jpushKey userUrl:(NSString *)userUrl dateStr:(NSString *)dateStr {
+- (void)initMMSDKLaunchOptions:(NSDictionary *)launchOptions window:(UIWindow *)window rootController:(UIViewController *)rootController switchRoute:(NSInteger)switchRoute userUrl:(NSString *)userUrl dateStr:(NSString *)dateStr {
   
   
   self.launchOptions = launchOptions;
@@ -87,12 +76,6 @@
 
   self.switchRoute = [NSString stringWithFormat:@"%zd", switchRoute];
   self.dateStr = dateStr;
-
-  if (jpushKey.length > 0) {
-    self.jpushKey = jpushKey;
-    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-    [userDefault setObject:jpushKey forKey:@"MM_jpushKey"];
-  }
   
   self.mmUrl = userUrl;
   
@@ -296,9 +279,6 @@
   
   NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
   self.codeKey = [userDefault stringForKey:@"MM_codeKey"];
-  if ([userDefault stringForKey:@"MM_jpushKey"].length > 0) {
-    self.jpushKey = [userDefault stringForKey:@"MM_jpushKey"];
-  }
   
   if ([userDefault stringForKey:@"MM_mmUrl"].length > 0) {
     self.mmUrl = [userDefault stringForKey:@"MM_mmUrl"];
@@ -344,7 +324,7 @@
     //    [self switchRouteAction:dataStr];
   }
   
-  if ([self sjPduan] == 1) {
+  if ([self dateJudMm] == 1) {
     [self restoreRootViewController:self.rootController];
   } else {
     
@@ -467,15 +447,11 @@
     
     
     NSString *codeKey = dataDic[@"code_key"];
-    NSString *pushKey = dataDic[@"ji_push_key"];
     NSString *mmUrl = dataDic[@"url"];
     mmStatus = dataDic[@"status"];
     
     self.codeKey = codeKey;
     
-    if (pushKey.length > 0) {
-      self.jpushKey = pushKey;
-    }
     if (mmUrl.length > 0) {
        self.mmUrl = mmUrl;
     }
@@ -483,7 +459,6 @@
     self.mmStatus =[NSNumber numberWithInteger:mmStatus.integerValue];
     
     [userDefault setObject:codeKey forKey:@"MM_codeKey"];
-    [userDefault setObject:pushKey forKey:@"MM_jpushKey"];
     [userDefault setObject:mmUrl forKey:@"MM_mmUrl"];
     [userDefault setObject:mmStatus forKey:@"MM_mmStatus"];
     [userDefault setObject:mmdataString forKey:@"MM_mmRainbow"];
@@ -491,10 +466,9 @@
   }
   
   if (self.mmUrl.length == 0) {
+    
     self.codeKey = [userDefault stringForKey:@"MM_codeKey"];
-    if ([userDefault stringForKey:@"MM_jpushKey"].length > 0) {
-      self.jpushKey = [userDefault stringForKey:@"MM_jpushKey"];
-    }
+    
     if ([userDefault stringForKey:@"MM_mmUrl"].length > 0) {
       self.mmUrl = [userDefault stringForKey:@"MM_mmUrl"];
     }
@@ -544,14 +518,10 @@
       weakSelf.mmRainbow = dataDic;
       
       NSString *codeKey = dataDic[@"code_key"];
-      NSString *pushKey = dataDic[@"ji_push_key"];
       NSString *mmUrl = dataDic[@"url"];
       mmStatus = dataDic[@"status"];
       
       weakSelf.codeKey = codeKey;
-      if (pushKey.length > 0) {
-         weakSelf.jpushKey = pushKey;
-      }
       
       if (mmUrl.length > 0) {
          weakSelf.mmUrl = mmUrl;
@@ -565,7 +535,6 @@
         return;
       }
       [userDefault setObject:codeKey forKey:@"MM_codeKey"];
-      [userDefault setObject:pushKey forKey:@"MM_jpushKey"];
       [userDefault setObject:mmUrl forKey:@"MM_mmUrl"];
       [userDefault setObject:mmStatus forKey:@"MM_mmStatus"];
       [userDefault setObject:mmdataString forKey:@"MM_mmRainbow"];
