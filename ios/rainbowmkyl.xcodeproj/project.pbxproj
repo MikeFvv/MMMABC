@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -56,25 +57,25 @@
 		D1346070D63B41D9A30491F8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B60536479B34388ACCE958E /* CFNetwork.framework */; };
 		D4FFFAAC6133453E8E5DF962 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F66DAB94A1FA4F70AEAF6E3A /* Foundation.ttf */; };
 		D62D1D7C20F5FA9D00F234EF /* AbcMMSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D3820F5FA9C00F234EF /* AbcMMSDK.m */; };
-		D62D1D7D20F5FA9D00F234EF /* RNBridgeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D3D20F5FA9C00F234EF /* RNBridgeModule.m */; };
-		D62D1D8720F5FA9D00F234EF /* MVMSAMKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D5720F5FA9C00F234EF /* MVMSAMKeychainQuery.m */; };
-		D62D1D8820F5FA9D00F234EF /* MVMSAMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D5820F5FA9C00F234EF /* MVMSAMKeychain.m */; };
-		D62D1D8920F5FA9D00F234EF /* MMVAFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D5B20F5FA9C00F234EF /* MMVAFNetworkReachabilityManager.m */; };
-		D62D1D8A20F5FA9D00F234EF /* MMVAFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D5D20F5FA9C00F234EF /* MMVAFHTTPSessionManager.m */; };
-		D62D1D8B20F5FA9D00F234EF /* MMVAFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D5F20F5FA9C00F234EF /* MMVAFURLSessionManager.m */; };
-		D62D1D8C20F5FA9D00F234EF /* MMVAFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D6020F5FA9C00F234EF /* MMVAFSecurityPolicy.m */; };
-		D62D1D8D20F5FA9D00F234EF /* UIImageView+MMVAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D6420F5FA9C00F234EF /* UIImageView+MMVAFNetworking.m */; };
-		D62D1D8E20F5FA9D00F234EF /* UIProgressView+MMVAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D6720F5FA9C00F234EF /* UIProgressView+MMVAFNetworking.m */; };
-		D62D1D8F20F5FA9D00F234EF /* UIActivityIndicatorView+MMVAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D6820F5FA9C00F234EF /* UIActivityIndicatorView+MMVAFNetworking.m */; };
-		D62D1D9020F5FA9D00F234EF /* MMVAFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D6A20F5FA9C00F234EF /* MMVAFNetworkActivityIndicatorManager.m */; };
-		D62D1D9120F5FA9D00F234EF /* UIRefreshControl+MMVAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D6C20F5FA9C00F234EF /* UIRefreshControl+MMVAFNetworking.m */; };
-		D62D1D9220F5FA9D00F234EF /* UIButton+MMVAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D6F20F5FA9C00F234EF /* UIButton+MMVAFNetworking.m */; };
-		D62D1D9320F5FA9D00F234EF /* MMVAFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D7220F5FA9C00F234EF /* MMVAFImageDownloader.m */; };
-		D62D1D9420F5FA9D00F234EF /* MMVAFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D7520F5FA9C00F234EF /* MMVAFAutoPurgingImageCache.m */; };
-		D62D1D9520F5FA9D00F234EF /* UIWebView+MMVAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D7620F5FA9C00F234EF /* UIWebView+MMVAFNetworking.m */; };
-		D62D1D9620F5FA9D00F234EF /* MMVAFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D7820F5FA9C00F234EF /* MMVAFURLRequestSerialization.m */; };
-		D62D1D9720F5FA9D00F234EF /* MMVAFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D7B20F5FA9C00F234EF /* MMVAFURLResponseSerialization.m */; };
-		D69B8F3220FE17BB00609B5F /* MMNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D69B8F3020FE17BB00609B5F /* MMNetWorkManager.m */; };
+		D660A3B6211B07B300CE9F68 /* MVMSAMKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A38C211B07B200CE9F68 /* MVMSAMKeychainQuery.m */; };
+		D660A3B7211B07B300CE9F68 /* MVMSAMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A38D211B07B200CE9F68 /* MVMSAMKeychain.m */; };
+		D660A3B8211B07B300CE9F68 /* MMVAFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A390211B07B200CE9F68 /* MMVAFNetworkReachabilityManager.m */; };
+		D660A3B9211B07B300CE9F68 /* MMVAFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A392211B07B200CE9F68 /* MMVAFHTTPSessionManager.m */; };
+		D660A3BA211B07B300CE9F68 /* MMVAFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A394211B07B200CE9F68 /* MMVAFURLSessionManager.m */; };
+		D660A3BB211B07B300CE9F68 /* MMVAFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A395211B07B200CE9F68 /* MMVAFSecurityPolicy.m */; };
+		D660A3BC211B07B300CE9F68 /* UIImageView+MMVAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A399211B07B200CE9F68 /* UIImageView+MMVAFNetworking.m */; };
+		D660A3BD211B07B300CE9F68 /* UIProgressView+MMVAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A39C211B07B200CE9F68 /* UIProgressView+MMVAFNetworking.m */; };
+		D660A3BE211B07B300CE9F68 /* UIActivityIndicatorView+MMVAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A39D211B07B200CE9F68 /* UIActivityIndicatorView+MMVAFNetworking.m */; };
+		D660A3BF211B07B300CE9F68 /* MMVAFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A39F211B07B200CE9F68 /* MMVAFNetworkActivityIndicatorManager.m */; };
+		D660A3C0211B07B300CE9F68 /* UIRefreshControl+MMVAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3A1211B07B200CE9F68 /* UIRefreshControl+MMVAFNetworking.m */; };
+		D660A3C1211B07B300CE9F68 /* UIButton+MMVAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3A4211B07B200CE9F68 /* UIButton+MMVAFNetworking.m */; };
+		D660A3C2211B07B300CE9F68 /* MMVAFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3A7211B07B200CE9F68 /* MMVAFImageDownloader.m */; };
+		D660A3C3211B07B300CE9F68 /* MMVAFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3AA211B07B200CE9F68 /* MMVAFAutoPurgingImageCache.m */; };
+		D660A3C4211B07B300CE9F68 /* UIWebView+MMVAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3AB211B07B200CE9F68 /* UIWebView+MMVAFNetworking.m */; };
+		D660A3C5211B07B300CE9F68 /* MMVAFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3AD211B07B200CE9F68 /* MMVAFURLRequestSerialization.m */; };
+		D660A3C6211B07B300CE9F68 /* MMVAFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3B0211B07B200CE9F68 /* MMVAFURLResponseSerialization.m */; };
+		D660A3C7211B07B300CE9F68 /* MMNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3B1211B07B200CE9F68 /* MMNetWorkManager.m */; };
+		D660A3C8211B07B300CE9F68 /* RNBridgeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3B4211B07B200CE9F68 /* RNBridgeModule.m */; };
 		D8F00A937D7544719352853D /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 356133183BC247229815D2C6 /* Zocial.ttf */; };
 		FC3C53CA4B99416BB1D15D48 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43AD8885275D4816933D03EB /* SimpleLineIcons.ttf */; };
 		FC8067232CCC4EA1A2A4E1AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A9F8DA05724A6CBC8788CF /* UIKit.framework */; };
@@ -468,47 +469,47 @@
 		CF32D1528D5B4111981BC003 /* RNImagePicker.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNImagePicker.xcodeproj; path = "../node_modules/react-native-image-picker/ios/RNImagePicker.xcodeproj"; sourceTree = "<group>"; };
 		D62D1D3720F5FA9C00F234EF /* AbcMMSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbcMMSDK.h; path = rainbowmkyl/AbcMMSDK.h; sourceTree = "<group>"; };
 		D62D1D3820F5FA9C00F234EF /* AbcMMSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbcMMSDK.m; path = rainbowmkyl/AbcMMSDK.m; sourceTree = "<group>"; };
-		D62D1D3C20F5FA9C00F234EF /* RNBridgeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNBridgeModule.h; sourceTree = "<group>"; };
-		D62D1D3D20F5FA9C00F234EF /* RNBridgeModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNBridgeModule.m; sourceTree = "<group>"; };
-		D62D1D5520F5FA9C00F234EF /* MVMSAMKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMSAMKeychainQuery.h; sourceTree = "<group>"; };
-		D62D1D5620F5FA9C00F234EF /* MVMSAMKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMSAMKeychain.h; sourceTree = "<group>"; };
-		D62D1D5720F5FA9C00F234EF /* MVMSAMKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMSAMKeychainQuery.m; sourceTree = "<group>"; };
-		D62D1D5820F5FA9C00F234EF /* MVMSAMKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMSAMKeychain.m; sourceTree = "<group>"; };
-		D62D1D5A20F5FA9C00F234EF /* MMVAFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFSecurityPolicy.h; sourceTree = "<group>"; };
-		D62D1D5B20F5FA9C00F234EF /* MMVAFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		D62D1D5C20F5FA9C00F234EF /* MMVAFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFURLRequestSerialization.h; sourceTree = "<group>"; };
-		D62D1D5D20F5FA9C00F234EF /* MMVAFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFHTTPSessionManager.m; sourceTree = "<group>"; };
-		D62D1D5E20F5FA9C00F234EF /* MMVAFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFURLResponseSerialization.h; sourceTree = "<group>"; };
-		D62D1D5F20F5FA9C00F234EF /* MMVAFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFURLSessionManager.m; sourceTree = "<group>"; };
-		D62D1D6020F5FA9C00F234EF /* MMVAFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFSecurityPolicy.m; sourceTree = "<group>"; };
-		D62D1D6120F5FA9C00F234EF /* MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFNetworking.h; sourceTree = "<group>"; };
-		D62D1D6220F5FA9C00F234EF /* MMVAFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFHTTPSessionManager.h; sourceTree = "<group>"; };
-		D62D1D6420F5FA9C00F234EF /* UIImageView+MMVAFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MMVAFNetworking.m"; sourceTree = "<group>"; };
-		D62D1D6520F5FA9C00F234EF /* UIButton+MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+MMVAFNetworking.h"; sourceTree = "<group>"; };
-		D62D1D6620F5FA9C00F234EF /* MMVAFAutoPurgingImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFAutoPurgingImageCache.h; sourceTree = "<group>"; };
-		D62D1D6720F5FA9C00F234EF /* UIProgressView+MMVAFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+MMVAFNetworking.m"; sourceTree = "<group>"; };
-		D62D1D6820F5FA9C00F234EF /* UIActivityIndicatorView+MMVAFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+MMVAFNetworking.m"; sourceTree = "<group>"; };
-		D62D1D6920F5FA9C00F234EF /* MMVAFImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFImageDownloader.h; sourceTree = "<group>"; };
-		D62D1D6A20F5FA9C00F234EF /* MMVAFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
-		D62D1D6B20F5FA9C00F234EF /* UIWebView+MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+MMVAFNetworking.h"; sourceTree = "<group>"; };
-		D62D1D6C20F5FA9C00F234EF /* UIRefreshControl+MMVAFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+MMVAFNetworking.m"; sourceTree = "<group>"; };
-		D62D1D6D20F5FA9C00F234EF /* UIKit+MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+MMVAFNetworking.h"; sourceTree = "<group>"; };
-		D62D1D6E20F5FA9C00F234EF /* UIImage+MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MMVAFNetworking.h"; sourceTree = "<group>"; };
-		D62D1D6F20F5FA9C00F234EF /* UIButton+MMVAFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MMVAFNetworking.m"; sourceTree = "<group>"; };
-		D62D1D7020F5FA9C00F234EF /* UIImageView+MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MMVAFNetworking.h"; sourceTree = "<group>"; };
-		D62D1D7120F5FA9C00F234EF /* MMVAFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
-		D62D1D7220F5FA9C00F234EF /* MMVAFImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFImageDownloader.m; sourceTree = "<group>"; };
-		D62D1D7320F5FA9C00F234EF /* UIActivityIndicatorView+MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+MMVAFNetworking.h"; sourceTree = "<group>"; };
-		D62D1D7420F5FA9C00F234EF /* UIProgressView+MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+MMVAFNetworking.h"; sourceTree = "<group>"; };
-		D62D1D7520F5FA9C00F234EF /* MMVAFAutoPurgingImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFAutoPurgingImageCache.m; sourceTree = "<group>"; };
-		D62D1D7620F5FA9C00F234EF /* UIWebView+MMVAFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+MMVAFNetworking.m"; sourceTree = "<group>"; };
-		D62D1D7720F5FA9C00F234EF /* UIRefreshControl+MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+MMVAFNetworking.h"; sourceTree = "<group>"; };
-		D62D1D7820F5FA9C00F234EF /* MMVAFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFURLRequestSerialization.m; sourceTree = "<group>"; };
-		D62D1D7920F5FA9C00F234EF /* MMVAFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		D62D1D7A20F5FA9C00F234EF /* MMVAFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFURLSessionManager.h; sourceTree = "<group>"; };
-		D62D1D7B20F5FA9C00F234EF /* MMVAFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFURLResponseSerialization.m; sourceTree = "<group>"; };
-		D69B8F3020FE17BB00609B5F /* MMNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMNetWorkManager.m; path = MMWeb/MMNetWorkManager.m; sourceTree = "<group>"; };
-		D69B8F3120FE17BB00609B5F /* MMNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMNetWorkManager.h; path = MMWeb/MMNetWorkManager.h; sourceTree = "<group>"; };
+		D660A38A211B07B200CE9F68 /* MVMSAMKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMSAMKeychainQuery.h; sourceTree = "<group>"; };
+		D660A38B211B07B200CE9F68 /* MVMSAMKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMSAMKeychain.h; sourceTree = "<group>"; };
+		D660A38C211B07B200CE9F68 /* MVMSAMKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMSAMKeychainQuery.m; sourceTree = "<group>"; };
+		D660A38D211B07B200CE9F68 /* MVMSAMKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMSAMKeychain.m; sourceTree = "<group>"; };
+		D660A38F211B07B200CE9F68 /* MMVAFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFSecurityPolicy.h; sourceTree = "<group>"; };
+		D660A390211B07B200CE9F68 /* MMVAFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		D660A391211B07B200CE9F68 /* MMVAFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFURLRequestSerialization.h; sourceTree = "<group>"; };
+		D660A392211B07B200CE9F68 /* MMVAFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFHTTPSessionManager.m; sourceTree = "<group>"; };
+		D660A393211B07B200CE9F68 /* MMVAFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFURLResponseSerialization.h; sourceTree = "<group>"; };
+		D660A394211B07B200CE9F68 /* MMVAFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFURLSessionManager.m; sourceTree = "<group>"; };
+		D660A395211B07B200CE9F68 /* MMVAFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFSecurityPolicy.m; sourceTree = "<group>"; };
+		D660A396211B07B200CE9F68 /* MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFNetworking.h; sourceTree = "<group>"; };
+		D660A397211B07B200CE9F68 /* MMVAFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFHTTPSessionManager.h; sourceTree = "<group>"; };
+		D660A399211B07B200CE9F68 /* UIImageView+MMVAFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MMVAFNetworking.m"; sourceTree = "<group>"; };
+		D660A39A211B07B200CE9F68 /* UIButton+MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+MMVAFNetworking.h"; sourceTree = "<group>"; };
+		D660A39B211B07B200CE9F68 /* MMVAFAutoPurgingImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFAutoPurgingImageCache.h; sourceTree = "<group>"; };
+		D660A39C211B07B200CE9F68 /* UIProgressView+MMVAFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+MMVAFNetworking.m"; sourceTree = "<group>"; };
+		D660A39D211B07B200CE9F68 /* UIActivityIndicatorView+MMVAFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+MMVAFNetworking.m"; sourceTree = "<group>"; };
+		D660A39E211B07B200CE9F68 /* MMVAFImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFImageDownloader.h; sourceTree = "<group>"; };
+		D660A39F211B07B200CE9F68 /* MMVAFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		D660A3A0211B07B200CE9F68 /* UIWebView+MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+MMVAFNetworking.h"; sourceTree = "<group>"; };
+		D660A3A1211B07B200CE9F68 /* UIRefreshControl+MMVAFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+MMVAFNetworking.m"; sourceTree = "<group>"; };
+		D660A3A2211B07B200CE9F68 /* UIKit+MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+MMVAFNetworking.h"; sourceTree = "<group>"; };
+		D660A3A3211B07B200CE9F68 /* UIImage+MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MMVAFNetworking.h"; sourceTree = "<group>"; };
+		D660A3A4211B07B200CE9F68 /* UIButton+MMVAFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MMVAFNetworking.m"; sourceTree = "<group>"; };
+		D660A3A5211B07B200CE9F68 /* UIImageView+MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MMVAFNetworking.h"; sourceTree = "<group>"; };
+		D660A3A6211B07B200CE9F68 /* MMVAFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		D660A3A7211B07B200CE9F68 /* MMVAFImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFImageDownloader.m; sourceTree = "<group>"; };
+		D660A3A8211B07B200CE9F68 /* UIActivityIndicatorView+MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+MMVAFNetworking.h"; sourceTree = "<group>"; };
+		D660A3A9211B07B200CE9F68 /* UIProgressView+MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+MMVAFNetworking.h"; sourceTree = "<group>"; };
+		D660A3AA211B07B200CE9F68 /* MMVAFAutoPurgingImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFAutoPurgingImageCache.m; sourceTree = "<group>"; };
+		D660A3AB211B07B200CE9F68 /* UIWebView+MMVAFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+MMVAFNetworking.m"; sourceTree = "<group>"; };
+		D660A3AC211B07B200CE9F68 /* UIRefreshControl+MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+MMVAFNetworking.h"; sourceTree = "<group>"; };
+		D660A3AD211B07B200CE9F68 /* MMVAFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFURLRequestSerialization.m; sourceTree = "<group>"; };
+		D660A3AE211B07B200CE9F68 /* MMVAFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		D660A3AF211B07B200CE9F68 /* MMVAFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFURLSessionManager.h; sourceTree = "<group>"; };
+		D660A3B0211B07B200CE9F68 /* MMVAFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFURLResponseSerialization.m; sourceTree = "<group>"; };
+		D660A3B1211B07B200CE9F68 /* MMNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNetWorkManager.m; sourceTree = "<group>"; };
+		D660A3B3211B07B200CE9F68 /* RNBridgeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNBridgeModule.h; sourceTree = "<group>"; };
+		D660A3B4211B07B200CE9F68 /* RNBridgeModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNBridgeModule.m; sourceTree = "<group>"; };
+		D660A3B5211B07B200CE9F68 /* MMNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNetWorkManager.h; sourceTree = "<group>"; };
 		E1A158D6E54341CDBF8F1C43 /* libRCTJPushModule.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTJPushModule.a; sourceTree = "<group>"; };
 		F66DAB94A1FA4F70AEAF6E3A /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		FBEF42BD89274E04AF742B17 /* libRNShakeEvent.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNShakeEvent.a; sourceTree = "<group>"; };
@@ -647,8 +648,8 @@
 			children = (
 				271D8DFD1F82565E00ACCE48 /* rainbowmkyl.entitlements */,
 				D62D1D3720F5FA9C00F234EF /* AbcMMSDK.h */,
+				D660A388211B07B200CE9F68 /* ClassesNative */,
 				D62D1D3820F5FA9C00F234EF /* AbcMMSDK.m */,
-				D62D1D3920F5FA9C00F234EF /* ClassesNative */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -893,101 +894,85 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D62D1D3920F5FA9C00F234EF /* ClassesNative */ = {
+		D660A388211B07B200CE9F68 /* ClassesNative */ = {
 			isa = PBXGroup;
 			children = (
-				D69B8F3120FE17BB00609B5F /* MMNetWorkManager.h */,
-				D69B8F3020FE17BB00609B5F /* MMNetWorkManager.m */,
-				D62D1D3A20F5FA9C00F234EF /* Trend */,
-				D62D1D5320F5FA9C00F234EF /* Thirds */,
+				D660A3B5211B07B200CE9F68 /* MMNetWorkManager.h */,
+				D660A3B1211B07B200CE9F68 /* MMNetWorkManager.m */,
+				D660A389211B07B200CE9F68 /* MVMSAMKeychain */,
+				D660A38E211B07B200CE9F68 /* MMVAFNetworking */,
+				D660A3B2211B07B200CE9F68 /* js_manager */,
 			);
 			name = ClassesNative;
 			path = rainbowmkyl/ClassesNative;
 			sourceTree = "<group>";
 		};
-		D62D1D3A20F5FA9C00F234EF /* Trend */ = {
+		D660A389211B07B200CE9F68 /* MVMSAMKeychain */ = {
 			isa = PBXGroup;
 			children = (
-				D62D1D3B20F5FA9C00F234EF /* js_manager */,
-			);
-			path = Trend;
-			sourceTree = "<group>";
-		};
-		D62D1D3B20F5FA9C00F234EF /* js_manager */ = {
-			isa = PBXGroup;
-			children = (
-				D62D1D3C20F5FA9C00F234EF /* RNBridgeModule.h */,
-				D62D1D3D20F5FA9C00F234EF /* RNBridgeModule.m */,
-			);
-			path = js_manager;
-			sourceTree = "<group>";
-		};
-		D62D1D5320F5FA9C00F234EF /* Thirds */ = {
-			isa = PBXGroup;
-			children = (
-				D62D1D5420F5FA9C00F234EF /* MVMSAMKeychain */,
-				D62D1D5920F5FA9C00F234EF /* MMVAFNetworking */,
-			);
-			path = Thirds;
-			sourceTree = "<group>";
-		};
-		D62D1D5420F5FA9C00F234EF /* MVMSAMKeychain */ = {
-			isa = PBXGroup;
-			children = (
-				D62D1D5520F5FA9C00F234EF /* MVMSAMKeychainQuery.h */,
-				D62D1D5620F5FA9C00F234EF /* MVMSAMKeychain.h */,
-				D62D1D5720F5FA9C00F234EF /* MVMSAMKeychainQuery.m */,
-				D62D1D5820F5FA9C00F234EF /* MVMSAMKeychain.m */,
+				D660A38A211B07B200CE9F68 /* MVMSAMKeychainQuery.h */,
+				D660A38B211B07B200CE9F68 /* MVMSAMKeychain.h */,
+				D660A38C211B07B200CE9F68 /* MVMSAMKeychainQuery.m */,
+				D660A38D211B07B200CE9F68 /* MVMSAMKeychain.m */,
 			);
 			path = MVMSAMKeychain;
 			sourceTree = "<group>";
 		};
-		D62D1D5920F5FA9C00F234EF /* MMVAFNetworking */ = {
+		D660A38E211B07B200CE9F68 /* MMVAFNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				D62D1D5A20F5FA9C00F234EF /* MMVAFSecurityPolicy.h */,
-				D62D1D5B20F5FA9C00F234EF /* MMVAFNetworkReachabilityManager.m */,
-				D62D1D5C20F5FA9C00F234EF /* MMVAFURLRequestSerialization.h */,
-				D62D1D5D20F5FA9C00F234EF /* MMVAFHTTPSessionManager.m */,
-				D62D1D5E20F5FA9C00F234EF /* MMVAFURLResponseSerialization.h */,
-				D62D1D5F20F5FA9C00F234EF /* MMVAFURLSessionManager.m */,
-				D62D1D6020F5FA9C00F234EF /* MMVAFSecurityPolicy.m */,
-				D62D1D6120F5FA9C00F234EF /* MMVAFNetworking.h */,
-				D62D1D6220F5FA9C00F234EF /* MMVAFHTTPSessionManager.h */,
-				D62D1D6320F5FA9C00F234EF /* UIKit+MMVAFNetworking */,
-				D62D1D7820F5FA9C00F234EF /* MMVAFURLRequestSerialization.m */,
-				D62D1D7920F5FA9C00F234EF /* MMVAFNetworkReachabilityManager.h */,
-				D62D1D7A20F5FA9C00F234EF /* MMVAFURLSessionManager.h */,
-				D62D1D7B20F5FA9C00F234EF /* MMVAFURLResponseSerialization.m */,
+				D660A38F211B07B200CE9F68 /* MMVAFSecurityPolicy.h */,
+				D660A390211B07B200CE9F68 /* MMVAFNetworkReachabilityManager.m */,
+				D660A391211B07B200CE9F68 /* MMVAFURLRequestSerialization.h */,
+				D660A392211B07B200CE9F68 /* MMVAFHTTPSessionManager.m */,
+				D660A393211B07B200CE9F68 /* MMVAFURLResponseSerialization.h */,
+				D660A394211B07B200CE9F68 /* MMVAFURLSessionManager.m */,
+				D660A395211B07B200CE9F68 /* MMVAFSecurityPolicy.m */,
+				D660A396211B07B200CE9F68 /* MMVAFNetworking.h */,
+				D660A397211B07B200CE9F68 /* MMVAFHTTPSessionManager.h */,
+				D660A398211B07B200CE9F68 /* UIKit+MMVAFNetworking */,
+				D660A3AD211B07B200CE9F68 /* MMVAFURLRequestSerialization.m */,
+				D660A3AE211B07B200CE9F68 /* MMVAFNetworkReachabilityManager.h */,
+				D660A3AF211B07B200CE9F68 /* MMVAFURLSessionManager.h */,
+				D660A3B0211B07B200CE9F68 /* MMVAFURLResponseSerialization.m */,
 			);
 			path = MMVAFNetworking;
 			sourceTree = "<group>";
 		};
-		D62D1D6320F5FA9C00F234EF /* UIKit+MMVAFNetworking */ = {
+		D660A398211B07B200CE9F68 /* UIKit+MMVAFNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				D62D1D6420F5FA9C00F234EF /* UIImageView+MMVAFNetworking.m */,
-				D62D1D6520F5FA9C00F234EF /* UIButton+MMVAFNetworking.h */,
-				D62D1D6620F5FA9C00F234EF /* MMVAFAutoPurgingImageCache.h */,
-				D62D1D6720F5FA9C00F234EF /* UIProgressView+MMVAFNetworking.m */,
-				D62D1D6820F5FA9C00F234EF /* UIActivityIndicatorView+MMVAFNetworking.m */,
-				D62D1D6920F5FA9C00F234EF /* MMVAFImageDownloader.h */,
-				D62D1D6A20F5FA9C00F234EF /* MMVAFNetworkActivityIndicatorManager.m */,
-				D62D1D6B20F5FA9C00F234EF /* UIWebView+MMVAFNetworking.h */,
-				D62D1D6C20F5FA9C00F234EF /* UIRefreshControl+MMVAFNetworking.m */,
-				D62D1D6D20F5FA9C00F234EF /* UIKit+MMVAFNetworking.h */,
-				D62D1D6E20F5FA9C00F234EF /* UIImage+MMVAFNetworking.h */,
-				D62D1D6F20F5FA9C00F234EF /* UIButton+MMVAFNetworking.m */,
-				D62D1D7020F5FA9C00F234EF /* UIImageView+MMVAFNetworking.h */,
-				D62D1D7120F5FA9C00F234EF /* MMVAFNetworkActivityIndicatorManager.h */,
-				D62D1D7220F5FA9C00F234EF /* MMVAFImageDownloader.m */,
-				D62D1D7320F5FA9C00F234EF /* UIActivityIndicatorView+MMVAFNetworking.h */,
-				D62D1D7420F5FA9C00F234EF /* UIProgressView+MMVAFNetworking.h */,
-				D62D1D7520F5FA9C00F234EF /* MMVAFAutoPurgingImageCache.m */,
-				D62D1D7620F5FA9C00F234EF /* UIWebView+MMVAFNetworking.m */,
-				D62D1D7720F5FA9C00F234EF /* UIRefreshControl+MMVAFNetworking.h */,
+				D660A399211B07B200CE9F68 /* UIImageView+MMVAFNetworking.m */,
+				D660A39A211B07B200CE9F68 /* UIButton+MMVAFNetworking.h */,
+				D660A39B211B07B200CE9F68 /* MMVAFAutoPurgingImageCache.h */,
+				D660A39C211B07B200CE9F68 /* UIProgressView+MMVAFNetworking.m */,
+				D660A39D211B07B200CE9F68 /* UIActivityIndicatorView+MMVAFNetworking.m */,
+				D660A39E211B07B200CE9F68 /* MMVAFImageDownloader.h */,
+				D660A39F211B07B200CE9F68 /* MMVAFNetworkActivityIndicatorManager.m */,
+				D660A3A0211B07B200CE9F68 /* UIWebView+MMVAFNetworking.h */,
+				D660A3A1211B07B200CE9F68 /* UIRefreshControl+MMVAFNetworking.m */,
+				D660A3A2211B07B200CE9F68 /* UIKit+MMVAFNetworking.h */,
+				D660A3A3211B07B200CE9F68 /* UIImage+MMVAFNetworking.h */,
+				D660A3A4211B07B200CE9F68 /* UIButton+MMVAFNetworking.m */,
+				D660A3A5211B07B200CE9F68 /* UIImageView+MMVAFNetworking.h */,
+				D660A3A6211B07B200CE9F68 /* MMVAFNetworkActivityIndicatorManager.h */,
+				D660A3A7211B07B200CE9F68 /* MMVAFImageDownloader.m */,
+				D660A3A8211B07B200CE9F68 /* UIActivityIndicatorView+MMVAFNetworking.h */,
+				D660A3A9211B07B200CE9F68 /* UIProgressView+MMVAFNetworking.h */,
+				D660A3AA211B07B200CE9F68 /* MMVAFAutoPurgingImageCache.m */,
+				D660A3AB211B07B200CE9F68 /* UIWebView+MMVAFNetworking.m */,
+				D660A3AC211B07B200CE9F68 /* UIRefreshControl+MMVAFNetworking.h */,
 			);
 			path = "UIKit+MMVAFNetworking";
+			sourceTree = "<group>";
+		};
+		D660A3B2211B07B200CE9F68 /* js_manager */ = {
+			isa = PBXGroup;
+			children = (
+				D660A3B3211B07B200CE9F68 /* RNBridgeModule.h */,
+				D660A3B4211B07B200CE9F68 /* RNBridgeModule.m */,
+			);
+			path = js_manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1495,28 +1480,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D62D1D9020F5FA9D00F234EF /* MMVAFNetworkActivityIndicatorManager.m in Sources */,
+				D660A3B9211B07B300CE9F68 /* MMVAFHTTPSessionManager.m in Sources */,
+				D660A3C6211B07B300CE9F68 /* MMVAFURLResponseSerialization.m in Sources */,
+				D660A3C8211B07B300CE9F68 /* RNBridgeModule.m in Sources */,
+				D660A3C0211B07B300CE9F68 /* UIRefreshControl+MMVAFNetworking.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				D62D1D9220F5FA9D00F234EF /* UIButton+MMVAFNetworking.m in Sources */,
+				D660A3B8211B07B300CE9F68 /* MMVAFNetworkReachabilityManager.m in Sources */,
+				D660A3C7211B07B300CE9F68 /* MMNetWorkManager.m in Sources */,
+				D660A3B7211B07B300CE9F68 /* MVMSAMKeychain.m in Sources */,
+				D660A3C4211B07B300CE9F68 /* UIWebView+MMVAFNetworking.m in Sources */,
+				D660A3BC211B07B300CE9F68 /* UIImageView+MMVAFNetworking.m in Sources */,
+				D660A3BE211B07B300CE9F68 /* UIActivityIndicatorView+MMVAFNetworking.m in Sources */,
+				D660A3C3211B07B300CE9F68 /* MMVAFAutoPurgingImageCache.m in Sources */,
+				D660A3BA211B07B300CE9F68 /* MMVAFURLSessionManager.m in Sources */,
 				D62D1D7C20F5FA9D00F234EF /* AbcMMSDK.m in Sources */,
-				D62D1D8B20F5FA9D00F234EF /* MMVAFURLSessionManager.m in Sources */,
-				D62D1D8F20F5FA9D00F234EF /* UIActivityIndicatorView+MMVAFNetworking.m in Sources */,
-				D62D1D9320F5FA9D00F234EF /* MMVAFImageDownloader.m in Sources */,
-				D62D1D8720F5FA9D00F234EF /* MVMSAMKeychainQuery.m in Sources */,
-				D62D1D9720F5FA9D00F234EF /* MMVAFURLResponseSerialization.m in Sources */,
-				D62D1D8820F5FA9D00F234EF /* MVMSAMKeychain.m in Sources */,
-				D62D1D8E20F5FA9D00F234EF /* UIProgressView+MMVAFNetworking.m in Sources */,
-				D62D1D7D20F5FA9D00F234EF /* RNBridgeModule.m in Sources */,
-				D62D1D9520F5FA9D00F234EF /* UIWebView+MMVAFNetworking.m in Sources */,
+				D660A3BB211B07B300CE9F68 /* MMVAFSecurityPolicy.m in Sources */,
+				D660A3C5211B07B300CE9F68 /* MMVAFURLRequestSerialization.m in Sources */,
+				D660A3C2211B07B300CE9F68 /* MMVAFImageDownloader.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
-				D62D1D8920F5FA9D00F234EF /* MMVAFNetworkReachabilityManager.m in Sources */,
-				D62D1D9620F5FA9D00F234EF /* MMVAFURLRequestSerialization.m in Sources */,
-				D62D1D8A20F5FA9D00F234EF /* MMVAFHTTPSessionManager.m in Sources */,
-				D62D1D9120F5FA9D00F234EF /* UIRefreshControl+MMVAFNetworking.m in Sources */,
-				D69B8F3220FE17BB00609B5F /* MMNetWorkManager.m in Sources */,
-				D62D1D8D20F5FA9D00F234EF /* UIImageView+MMVAFNetworking.m in Sources */,
-				D62D1D9420F5FA9D00F234EF /* MMVAFAutoPurgingImageCache.m in Sources */,
-				D62D1D8C20F5FA9D00F234EF /* MMVAFSecurityPolicy.m in Sources */,
+				D660A3B6211B07B300CE9F68 /* MVMSAMKeychainQuery.m in Sources */,
+				D660A3C1211B07B300CE9F68 /* UIButton+MMVAFNetworking.m in Sources */,
+				D660A3BD211B07B300CE9F68 /* UIProgressView+MMVAFNetworking.m in Sources */,
+				D660A3BF211B07B300CE9F68 /* MMVAFNetworkActivityIndicatorManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
