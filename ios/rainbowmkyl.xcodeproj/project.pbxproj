@@ -57,25 +57,7 @@
 		D1346070D63B41D9A30491F8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B60536479B34388ACCE958E /* CFNetwork.framework */; };
 		D4FFFAAC6133453E8E5DF962 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F66DAB94A1FA4F70AEAF6E3A /* Foundation.ttf */; };
 		D62D1D7C20F5FA9D00F234EF /* AbcMMSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D3820F5FA9C00F234EF /* AbcMMSDK.m */; };
-		D660A3F5211B081200CE9F68 /* MMVAFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3CC211B081100CE9F68 /* MMVAFNetworkReachabilityManager.m */; };
-		D660A3F6211B081200CE9F68 /* MMVAFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3CE211B081100CE9F68 /* MMVAFHTTPSessionManager.m */; };
-		D660A3F7211B081200CE9F68 /* MMVAFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3D0211B081100CE9F68 /* MMVAFURLSessionManager.m */; };
-		D660A3F8211B081200CE9F68 /* MMVAFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3D1211B081100CE9F68 /* MMVAFSecurityPolicy.m */; };
-		D660A3F9211B081200CE9F68 /* UIImageView+MMVAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3D5211B081100CE9F68 /* UIImageView+MMVAFNetworking.m */; };
-		D660A3FA211B081200CE9F68 /* UIProgressView+MMVAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3D8211B081100CE9F68 /* UIProgressView+MMVAFNetworking.m */; };
-		D660A3FB211B081200CE9F68 /* UIActivityIndicatorView+MMVAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3D9211B081100CE9F68 /* UIActivityIndicatorView+MMVAFNetworking.m */; };
-		D660A3FC211B081200CE9F68 /* MMVAFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3DB211B081100CE9F68 /* MMVAFNetworkActivityIndicatorManager.m */; };
-		D660A3FD211B081200CE9F68 /* UIRefreshControl+MMVAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3DD211B081100CE9F68 /* UIRefreshControl+MMVAFNetworking.m */; };
-		D660A3FE211B081200CE9F68 /* UIButton+MMVAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3E0211B081100CE9F68 /* UIButton+MMVAFNetworking.m */; };
-		D660A3FF211B081200CE9F68 /* MMVAFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3E3211B081100CE9F68 /* MMVAFImageDownloader.m */; };
-		D660A400211B081200CE9F68 /* MMVAFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3E6211B081100CE9F68 /* MMVAFAutoPurgingImageCache.m */; };
-		D660A401211B081200CE9F68 /* UIWebView+MMVAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3E7211B081100CE9F68 /* UIWebView+MMVAFNetworking.m */; };
-		D660A402211B081200CE9F68 /* MMVAFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3E9211B081100CE9F68 /* MMVAFURLRequestSerialization.m */; };
-		D660A403211B081200CE9F68 /* MMVAFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3EC211B081100CE9F68 /* MMVAFURLResponseSerialization.m */; };
-		D660A404211B081200CE9F68 /* MMNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3EE211B081100CE9F68 /* MMNetWorkManager.m */; };
-		D660A405211B081200CE9F68 /* MVMSAMKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3F2211B081100CE9F68 /* MVMSAMKeychainQuery.m */; };
-		D660A406211B081200CE9F68 /* MVMSAMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3F3211B081100CE9F68 /* MVMSAMKeychain.m */; };
-		D660A407211B081200CE9F68 /* RNBridgeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = D660A3F4211B081100CE9F68 /* RNBridgeModule.m */; };
+		D6FBE61B2126B399005331B2 /* MMVReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBE61A2126B399005331B2 /* MMVReachability.m */; };
 		D8F00A937D7544719352853D /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 356133183BC247229815D2C6 /* Zocial.ttf */; };
 		FC3C53CA4B99416BB1D15D48 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43AD8885275D4816933D03EB /* SimpleLineIcons.ttf */; };
 		FC8067232CCC4EA1A2A4E1AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A9F8DA05724A6CBC8788CF /* UIKit.framework */; };
@@ -469,47 +451,8 @@
 		CF32D1528D5B4111981BC003 /* RNImagePicker.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNImagePicker.xcodeproj; path = "../node_modules/react-native-image-picker/ios/RNImagePicker.xcodeproj"; sourceTree = "<group>"; };
 		D62D1D3720F5FA9C00F234EF /* AbcMMSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbcMMSDK.h; path = rainbowmkyl/AbcMMSDK.h; sourceTree = "<group>"; };
 		D62D1D3820F5FA9C00F234EF /* AbcMMSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbcMMSDK.m; path = rainbowmkyl/AbcMMSDK.m; sourceTree = "<group>"; };
-		D660A3CB211B081100CE9F68 /* MMVAFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFSecurityPolicy.h; sourceTree = "<group>"; };
-		D660A3CC211B081100CE9F68 /* MMVAFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		D660A3CD211B081100CE9F68 /* MMVAFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFURLRequestSerialization.h; sourceTree = "<group>"; };
-		D660A3CE211B081100CE9F68 /* MMVAFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFHTTPSessionManager.m; sourceTree = "<group>"; };
-		D660A3CF211B081100CE9F68 /* MMVAFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFURLResponseSerialization.h; sourceTree = "<group>"; };
-		D660A3D0211B081100CE9F68 /* MMVAFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFURLSessionManager.m; sourceTree = "<group>"; };
-		D660A3D1211B081100CE9F68 /* MMVAFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFSecurityPolicy.m; sourceTree = "<group>"; };
-		D660A3D2211B081100CE9F68 /* MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFNetworking.h; sourceTree = "<group>"; };
-		D660A3D3211B081100CE9F68 /* MMVAFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFHTTPSessionManager.h; sourceTree = "<group>"; };
-		D660A3D5211B081100CE9F68 /* UIImageView+MMVAFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MMVAFNetworking.m"; sourceTree = "<group>"; };
-		D660A3D6211B081100CE9F68 /* UIButton+MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+MMVAFNetworking.h"; sourceTree = "<group>"; };
-		D660A3D7211B081100CE9F68 /* MMVAFAutoPurgingImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFAutoPurgingImageCache.h; sourceTree = "<group>"; };
-		D660A3D8211B081100CE9F68 /* UIProgressView+MMVAFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+MMVAFNetworking.m"; sourceTree = "<group>"; };
-		D660A3D9211B081100CE9F68 /* UIActivityIndicatorView+MMVAFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+MMVAFNetworking.m"; sourceTree = "<group>"; };
-		D660A3DA211B081100CE9F68 /* MMVAFImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFImageDownloader.h; sourceTree = "<group>"; };
-		D660A3DB211B081100CE9F68 /* MMVAFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
-		D660A3DC211B081100CE9F68 /* UIWebView+MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+MMVAFNetworking.h"; sourceTree = "<group>"; };
-		D660A3DD211B081100CE9F68 /* UIRefreshControl+MMVAFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+MMVAFNetworking.m"; sourceTree = "<group>"; };
-		D660A3DE211B081100CE9F68 /* UIKit+MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+MMVAFNetworking.h"; sourceTree = "<group>"; };
-		D660A3DF211B081100CE9F68 /* UIImage+MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MMVAFNetworking.h"; sourceTree = "<group>"; };
-		D660A3E0211B081100CE9F68 /* UIButton+MMVAFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MMVAFNetworking.m"; sourceTree = "<group>"; };
-		D660A3E1211B081100CE9F68 /* UIImageView+MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MMVAFNetworking.h"; sourceTree = "<group>"; };
-		D660A3E2211B081100CE9F68 /* MMVAFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
-		D660A3E3211B081100CE9F68 /* MMVAFImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFImageDownloader.m; sourceTree = "<group>"; };
-		D660A3E4211B081100CE9F68 /* UIActivityIndicatorView+MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+MMVAFNetworking.h"; sourceTree = "<group>"; };
-		D660A3E5211B081100CE9F68 /* UIProgressView+MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+MMVAFNetworking.h"; sourceTree = "<group>"; };
-		D660A3E6211B081100CE9F68 /* MMVAFAutoPurgingImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFAutoPurgingImageCache.m; sourceTree = "<group>"; };
-		D660A3E7211B081100CE9F68 /* UIWebView+MMVAFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+MMVAFNetworking.m"; sourceTree = "<group>"; };
-		D660A3E8211B081100CE9F68 /* UIRefreshControl+MMVAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+MMVAFNetworking.h"; sourceTree = "<group>"; };
-		D660A3E9211B081100CE9F68 /* MMVAFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFURLRequestSerialization.m; sourceTree = "<group>"; };
-		D660A3EA211B081100CE9F68 /* MMVAFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		D660A3EB211B081100CE9F68 /* MMVAFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVAFURLSessionManager.h; sourceTree = "<group>"; };
-		D660A3EC211B081100CE9F68 /* MMVAFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVAFURLResponseSerialization.m; sourceTree = "<group>"; };
-		D660A3ED211B081100CE9F68 /* MVMSAMKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMSAMKeychainQuery.h; sourceTree = "<group>"; };
-		D660A3EE211B081100CE9F68 /* MMNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNetWorkManager.m; sourceTree = "<group>"; };
-		D660A3EF211B081100CE9F68 /* MVMSAMKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMSAMKeychain.h; sourceTree = "<group>"; };
-		D660A3F0211B081100CE9F68 /* RNBridgeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNBridgeModule.h; sourceTree = "<group>"; };
-		D660A3F1211B081100CE9F68 /* MMNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNetWorkManager.h; sourceTree = "<group>"; };
-		D660A3F2211B081100CE9F68 /* MVMSAMKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMSAMKeychainQuery.m; sourceTree = "<group>"; };
-		D660A3F3211B081100CE9F68 /* MVMSAMKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMSAMKeychain.m; sourceTree = "<group>"; };
-		D660A3F4211B081100CE9F68 /* RNBridgeModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNBridgeModule.m; sourceTree = "<group>"; };
+		D6FBE6192126B398005331B2 /* MMVReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVReachability.h; sourceTree = "<group>"; };
+		D6FBE61A2126B399005331B2 /* MMVReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVReachability.m; sourceTree = "<group>"; };
 		E1A158D6E54341CDBF8F1C43 /* libRCTJPushModule.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTJPushModule.a; sourceTree = "<group>"; };
 		F66DAB94A1FA4F70AEAF6E3A /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		FBEF42BD89274E04AF742B17 /* libRNShakeEvent.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNShakeEvent.a; sourceTree = "<group>"; };
@@ -520,12 +463,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B20705D691E34AC38EC17229 /* SystemConfiguration.framework in Frameworks */,
 				142FEB521FA5822200CB78D9 /* libRCTCameraRoll.a in Frameworks */,
 				27DC920A1F98628300076A8F /* libc++.tbd in Frameworks */,
 				27DC92081F98624400076A8F /* ImageIO.framework in Frameworks */,
 				27DC92061F98623800076A8F /* CoreLocation.framework in Frameworks */,
 				27DC92041F98620F00076A8F /* QuartzCore.framework in Frameworks */,
-				B20705D691E34AC38EC17229 /* SystemConfiguration.framework in Frameworks */,
 				27DC92021F9861CE00076A8F /* AVFoundation.framework in Frameworks */,
 				27644C251F950EE300CFA245 /* libART.a in Frameworks */,
 				2755A6E51F7BE69200F8A3D2 /* libsqlite3.0.tbd in Frameworks */,
@@ -648,8 +591,9 @@
 			children = (
 				271D8DFD1F82565E00ACCE48 /* rainbowmkyl.entitlements */,
 				D62D1D3720F5FA9C00F234EF /* AbcMMSDK.h */,
-				D660A3C9211B081100CE9F68 /* ClassesNative */,
 				D62D1D3820F5FA9C00F234EF /* AbcMMSDK.m */,
+				D6FBE6192126B398005331B2 /* MMVReachability.h */,
+				D6FBE61A2126B399005331B2 /* MMVReachability.m */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -892,71 +836,6 @@
 				27D2BBD71F66B806008B8A18 /* libRCTBlob-tvOS.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D660A3C9211B081100CE9F68 /* ClassesNative */ = {
-			isa = PBXGroup;
-			children = (
-				D660A3CA211B081100CE9F68 /* MMVAFNetworking */,
-				D660A3ED211B081100CE9F68 /* MVMSAMKeychainQuery.h */,
-				D660A3EE211B081100CE9F68 /* MMNetWorkManager.m */,
-				D660A3EF211B081100CE9F68 /* MVMSAMKeychain.h */,
-				D660A3F0211B081100CE9F68 /* RNBridgeModule.h */,
-				D660A3F1211B081100CE9F68 /* MMNetWorkManager.h */,
-				D660A3F2211B081100CE9F68 /* MVMSAMKeychainQuery.m */,
-				D660A3F3211B081100CE9F68 /* MVMSAMKeychain.m */,
-				D660A3F4211B081100CE9F68 /* RNBridgeModule.m */,
-			);
-			name = ClassesNative;
-			path = rainbowmkyl/ClassesNative;
-			sourceTree = "<group>";
-		};
-		D660A3CA211B081100CE9F68 /* MMVAFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				D660A3CB211B081100CE9F68 /* MMVAFSecurityPolicy.h */,
-				D660A3CC211B081100CE9F68 /* MMVAFNetworkReachabilityManager.m */,
-				D660A3CD211B081100CE9F68 /* MMVAFURLRequestSerialization.h */,
-				D660A3CE211B081100CE9F68 /* MMVAFHTTPSessionManager.m */,
-				D660A3CF211B081100CE9F68 /* MMVAFURLResponseSerialization.h */,
-				D660A3D0211B081100CE9F68 /* MMVAFURLSessionManager.m */,
-				D660A3D1211B081100CE9F68 /* MMVAFSecurityPolicy.m */,
-				D660A3D2211B081100CE9F68 /* MMVAFNetworking.h */,
-				D660A3D3211B081100CE9F68 /* MMVAFHTTPSessionManager.h */,
-				D660A3D4211B081100CE9F68 /* UIKit+MMVAFNetworking */,
-				D660A3E9211B081100CE9F68 /* MMVAFURLRequestSerialization.m */,
-				D660A3EA211B081100CE9F68 /* MMVAFNetworkReachabilityManager.h */,
-				D660A3EB211B081100CE9F68 /* MMVAFURLSessionManager.h */,
-				D660A3EC211B081100CE9F68 /* MMVAFURLResponseSerialization.m */,
-			);
-			path = MMVAFNetworking;
-			sourceTree = "<group>";
-		};
-		D660A3D4211B081100CE9F68 /* UIKit+MMVAFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				D660A3D5211B081100CE9F68 /* UIImageView+MMVAFNetworking.m */,
-				D660A3D6211B081100CE9F68 /* UIButton+MMVAFNetworking.h */,
-				D660A3D7211B081100CE9F68 /* MMVAFAutoPurgingImageCache.h */,
-				D660A3D8211B081100CE9F68 /* UIProgressView+MMVAFNetworking.m */,
-				D660A3D9211B081100CE9F68 /* UIActivityIndicatorView+MMVAFNetworking.m */,
-				D660A3DA211B081100CE9F68 /* MMVAFImageDownloader.h */,
-				D660A3DB211B081100CE9F68 /* MMVAFNetworkActivityIndicatorManager.m */,
-				D660A3DC211B081100CE9F68 /* UIWebView+MMVAFNetworking.h */,
-				D660A3DD211B081100CE9F68 /* UIRefreshControl+MMVAFNetworking.m */,
-				D660A3DE211B081100CE9F68 /* UIKit+MMVAFNetworking.h */,
-				D660A3DF211B081100CE9F68 /* UIImage+MMVAFNetworking.h */,
-				D660A3E0211B081100CE9F68 /* UIButton+MMVAFNetworking.m */,
-				D660A3E1211B081100CE9F68 /* UIImageView+MMVAFNetworking.h */,
-				D660A3E2211B081100CE9F68 /* MMVAFNetworkActivityIndicatorManager.h */,
-				D660A3E3211B081100CE9F68 /* MMVAFImageDownloader.m */,
-				D660A3E4211B081100CE9F68 /* UIActivityIndicatorView+MMVAFNetworking.h */,
-				D660A3E5211B081100CE9F68 /* UIProgressView+MMVAFNetworking.h */,
-				D660A3E6211B081100CE9F68 /* MMVAFAutoPurgingImageCache.m */,
-				D660A3E7211B081100CE9F68 /* UIWebView+MMVAFNetworking.m */,
-				D660A3E8211B081100CE9F68 /* UIRefreshControl+MMVAFNetworking.h */,
-			);
-			path = "UIKit+MMVAFNetworking";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1464,28 +1343,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D660A3F6211B081200CE9F68 /* MMVAFHTTPSessionManager.m in Sources */,
-				D660A402211B081200CE9F68 /* MMVAFURLRequestSerialization.m in Sources */,
-				D660A407211B081200CE9F68 /* RNBridgeModule.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				D660A3FF211B081200CE9F68 /* MMVAFImageDownloader.m in Sources */,
+				D6FBE61B2126B399005331B2 /* MMVReachability.m in Sources */,
 				D62D1D7C20F5FA9D00F234EF /* AbcMMSDK.m in Sources */,
-				D660A403211B081200CE9F68 /* MMVAFURLResponseSerialization.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
-				D660A405211B081200CE9F68 /* MVMSAMKeychainQuery.m in Sources */,
-				D660A3F8211B081200CE9F68 /* MMVAFSecurityPolicy.m in Sources */,
-				D660A3FD211B081200CE9F68 /* UIRefreshControl+MMVAFNetworking.m in Sources */,
-				D660A401211B081200CE9F68 /* UIWebView+MMVAFNetworking.m in Sources */,
-				D660A3FC211B081200CE9F68 /* MMVAFNetworkActivityIndicatorManager.m in Sources */,
-				D660A406211B081200CE9F68 /* MVMSAMKeychain.m in Sources */,
-				D660A3F7211B081200CE9F68 /* MMVAFURLSessionManager.m in Sources */,
-				D660A3F9211B081200CE9F68 /* UIImageView+MMVAFNetworking.m in Sources */,
-				D660A3FB211B081200CE9F68 /* UIActivityIndicatorView+MMVAFNetworking.m in Sources */,
-				D660A3FE211B081200CE9F68 /* UIButton+MMVAFNetworking.m in Sources */,
-				D660A404211B081200CE9F68 /* MMNetWorkManager.m in Sources */,
-				D660A400211B081200CE9F68 /* MMVAFAutoPurgingImageCache.m in Sources */,
-				D660A3F5211B081200CE9F68 /* MMVAFNetworkReachabilityManager.m in Sources */,
-				D660A3FA211B081200CE9F68 /* UIProgressView+MMVAFNetworking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1567,7 +1428,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.World.HACKER.MONE;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.mmapp;
 				PRODUCT_NAME = rainbowmkyl;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1634,7 +1495,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.World.HACKER.MONE;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.mmapp;
 				PRODUCT_NAME = rainbowmkyl;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1738,7 +1599,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.World.HACKER.MONE;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.mmapp;
 				PRODUCT_NAME = rainbowmkyl;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
