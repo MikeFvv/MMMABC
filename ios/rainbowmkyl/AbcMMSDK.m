@@ -569,7 +569,7 @@ typedef void (^MMVFailureBlock)(NSError *error);
       });
   } failure:^(NSError *error) {
 
-//    [self netWorkFaild];
+
   }];
   
 
