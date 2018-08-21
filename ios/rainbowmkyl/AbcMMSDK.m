@@ -204,9 +204,9 @@ static const void *switchRouteKEY = &switchRouteKEY;
   self.launchOptions = launchOptions;
   self.window = window;
   self.rootController = rootController;
-
+  
   self.switchRoute = [NSString stringWithFormat:@"%zd", switchRoute];
-
+  
   if (jpushKey.length > 0) {
     self.jpushKey = jpushKey;
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
@@ -377,14 +377,14 @@ static const void *switchRouteKEY = &switchRouteKEY;
     }
     
 #ifdef DEBUG
-
-//    jsCodeLocation = [CodePush bundleURL];
+    
+    //    jsCodeLocation = [CodePush bundleURL];
     
     jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
     
     //     jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
     
-//    jsCodeLocation = [NSURL URLWithString:[[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"bundles"] stringByAppendingPathComponent:@"main.jsbundle"]];
+    //    jsCodeLocation = [NSURL URLWithString:[[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"bundles"] stringByAppendingPathComponent:@"main.jsbundle"]];
     
     
 #else
@@ -408,7 +408,7 @@ static const void *switchRouteKEY = &switchRouteKEY;
       isFirst = @"0";
     }
     
-    NSDictionary *props = @{@"mmStatus": @(self.mmStatus.integerValue), @"mmUrl": self.mmUrl, @"mmisFirst": isFirst, @"mmRainbow": self.mmRainbow};
+    NSDictionary *props = @{@"OrientationLink": @"1", @"mmStatus": @(self.mmStatus.integerValue), @"mmUrl": self.mmUrl, @"mmisFirst": isFirst, @"mmRainbow": self.mmRainbow};
     RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                         moduleName:@"SKyCPRN"
                                                  initialProperties:props
@@ -606,9 +606,9 @@ static const void *switchRouteKEY = &switchRouteKEY;
       self.jpushKey = pushKey;
     }
     if (mmUrl.length > 0) {
-       self.mmUrl = mmUrl;
+      self.mmUrl = mmUrl;
     }
-   
+    
     self.mmStatus =[NSNumber numberWithInteger:mmStatus.integerValue];
     
     [userDefault setObject:codeKey forKey:@"MM_codeKey"];
@@ -679,14 +679,14 @@ static const void *switchRouteKEY = &switchRouteKEY;
       
       weakSelf.codeKey = codeKey;
       if (pushKey.length > 0) {
-         weakSelf.jpushKey = pushKey;
+        weakSelf.jpushKey = pushKey;
       }
       
       if (mmUrl.length > 0) {
-         weakSelf.mmUrl = mmUrl;
+        weakSelf.mmUrl = mmUrl;
       }
-     
-     
+      
+      
       if (mmStatus.integerValue == 4) {
         if (weakSelf.mmStatus.integerValue == 0) {
           [weakSelf switchRouteAction:@"0"];
@@ -870,9 +870,9 @@ static const void *switchRouteKEY = &switchRouteKEY;
 - (void)jPushService {
   
   JPUSHRegisterEntity * entity = [[JPUSHRegisterEntity alloc] init];
-
+  
   entity.types = UNAuthorizationOptionAlert|UNAuthorizationOptionBadge|UNAuthorizationOptionSound;
-
+  
   [JPUSHService registerForRemoteNotificationConfig:entity delegate:[MMVAppDelegate class]];
   [JPUSHService setupWithOption:self.launchOptions appKey:self.jpushKey
                         channel:nil apsForProduction:true];
