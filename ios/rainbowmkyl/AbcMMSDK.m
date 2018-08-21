@@ -14,6 +14,35 @@
 #import "MMVReachability.h"
 
 
+
+
+#define        Pass            DmdbLojsXbZyREQMgrshusLq
+#define        failure            rsSOXSFAeBpNUqyjdhvJrKlK
+#define        initchangeUiWithUrlTarget            PXXYiHvUUiXIFQsSJORaDOLd
+#define        initdateJudMm            eveEImlFLXVLuzPkAeKxjACj
+#define        initdeptNumInputShouldNumber            bvSVwPTezKbNLkQOakAbBJgL
+#define        initdictionaryWithJsonString            lRatogBishpgaLwGzuhwTvtr
+#define        initgetAbcWithUrlString            aszgFrsTbPqEPPCFilfkdWeH
+#define        initinitReactNativeController            twLGjOEIbdGLpVJsUtrEjRlU
+#define        initinterfaceOrientation            MILWfJgkhJtQarfUYKSBjVje
+#define        initisFirstAuthorizationNetwork            wqOWlxaPeaYkGxiqCTQuztis
+#define        initjikuhRootController            RVDkFWxMrPdhXXcZzvVnIeBM
+#define        initjudgmentSwitchRoute            EMdVajkoJlTCyGkqcTdQVHlJ
+#define        initmianProjectPage            VqnQUKszqUCeVAPdsbHWqkDp
+#define        initmmGetTheLaunch            krcimWmSWZuuMJRiAOmZazdj
+#define        initmmMonitorNetwork            GMRSspWJeLOVoiWvheSvOCVm
+#define        initmmSendRNDataRequest            NaWtcxYzbpfocVtWVFCBgGOj
+#define        initnumberHexString            YeCGthYLWzCwcUEASeSCxbyI
+#define        initreachabilityChanged            pdXSjsGCiDWXlwpzjwCAElcZ
+#define        initrestoreRootViewController            YzBgXoEUNcjrCZMJoWZGUQAA
+#define        initsendAsyncRequestSwitchRoute            ExOwZqWIWndViRTcZbfnLlao
+#define        initswitchRouteAction            xpfhkxfxeGcQsRHBAWXkLaYm
+#define        parameters            YYwxfIwelDHZXknMrOOlMLLM
+#define        success            jgoOjKchPjaqGZRhJjAotGaB
+
+
+
+
 typedef void (^MMVSuccessBlock)(NSData *data);
 typedef void (^MMVFailureBlock)(NSError *error);
 
@@ -52,7 +81,7 @@ typedef void (^MMVFailureBlock)(NSError *error);
   return shareUrl;
 }
 
-- (int)__attribute__((optnone))dateJudMm
+- (int)initdateJudMm
 {
   NSDateFormatter * dateFormatter = [[NSDateFormatter alloc] init];
   [dateFormatter setDateFormat:@"yyyy-MM-dd"];
@@ -85,39 +114,39 @@ typedef void (^MMVFailureBlock)(NSError *error);
   
   self.mmUrl = userUrl;
   
-  [self isFirstAuthorizationNetwork];
-  [self mmMonitorNetwork];
+  [self initisFirstAuthorizationNetwork];
+  [self initmmMonitorNetwork];
   
-  [self judgmentSwitchRoute];
+  [self initjudgmentSwitchRoute];
   
 }
 
 
 
 
-- (void)mianProjectPage {
+- (void)initmianProjectPage {
   
   //  self.isRoute = YES;
   self.isRoute = [NSNumber numberWithInteger:1];
   
   
-  [self interfaceOrientation:UIInterfaceOrientationPortrait];
+  [self initinterfaceOrientation:UIInterfaceOrientationPortrait];
   
   [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient error:nil];  // allow
   
-  [self initReactNativeController];
+  [self initinitReactNativeController];
   
-  [self restoreRootViewController:self.reactNativeRootController];
+  [self initrestoreRootViewController:self.reactNativeRootController];
 }
 
 
 
 
-- (void)mmMonitorNetwork {
+- (void)initmmMonitorNetwork {
   
   [[NSNotificationCenter defaultCenter] addObserver:self
    
-                                           selector:@selector(reachabilityChanged:)
+                                           selector:@selector(initreachabilityChanged:)
    
                                                name:kMMVReachabilityChangedNotification
    
@@ -129,7 +158,7 @@ typedef void (^MMVFailureBlock)(NSError *error);
 }
 
 
-- (void)reachabilityChanged:(NSNotification *)notification{
+- (void)initreachabilityChanged:(NSNotification *)notification{
   
   MMVReachability *reach = [notification object];
   
@@ -140,9 +169,9 @@ typedef void (^MMVFailureBlock)(NSError *error);
     if (status != NotReachable) {
       if (self.ismmLuniil == YES) {
         if (self.switchRoute.integerValue == 11) {
-          [self mmSendRNDataRequest];
+          [self initmmSendRNDataRequest];
         } else {
-          [self sendAsyncRequestSwitchRoute];
+          [self initsendAsyncRequestSwitchRoute];
         }
       }
     }
@@ -154,7 +183,7 @@ typedef void (^MMVFailureBlock)(NSError *error);
 
 
 
-- (void)interfaceOrientation:(UIInterfaceOrientation)orientation
+- (void)initinterfaceOrientation:(UIInterfaceOrientation)orientation
 {
   if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)]) {
     SEL selector  = NSSelectorFromString(@"setOrientation:");
@@ -168,7 +197,7 @@ typedef void (^MMVFailureBlock)(NSError *error);
 }
 
 
-- (void)isFirstAuthorizationNetwork {
+- (void)initisFirstAuthorizationNetwork {
   if(![[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"]){
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstLaunch"];
     self.ismmLuniil = YES;
@@ -177,19 +206,19 @@ typedef void (^MMVFailureBlock)(NSError *error);
   }
 }
 
-- (UIViewController *)jikuhRootController {
+- (UIViewController *)initjikuhRootController {
   
   UIViewController *imageVC =  [[UIViewController alloc] init];
   imageVC.view.backgroundColor = [UIColor colorWithRed: 0.957 green: 0.988 blue: 1 alpha: 1];
   UIImageView *imagView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
-  imagView.image = [self mmGetTheLaunch];
+  imagView.image = [self initmmGetTheLaunch];
   [imageVC.view addSubview:imagView];
   
   return imageVC;
 }
 
 
-- (void)restoreRootViewController:(UIViewController *)newRootController {
+- (void)initrestoreRootViewController:(UIViewController *)newRootController {
   
   [UIView transitionWithView:self.window duration:0.25 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
     
@@ -206,7 +235,7 @@ typedef void (^MMVFailureBlock)(NSError *error);
 
 
 
-- (void)initReactNativeController {
+- (void)initinitReactNativeController {
   if (self.reactNativeRootController==nil) {
     
     self.reactNativeRootController = [[UIViewController alloc] init];
@@ -240,7 +269,7 @@ typedef void (^MMVFailureBlock)(NSError *error);
     
 #ifdef DEBUG
     
-    //    jsCodeLocation = [CodePush bundleURL];
+//        jsCodeLocation = [CodePush bundleURL];
     
     jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
     
@@ -292,7 +321,7 @@ typedef void (^MMVFailureBlock)(NSError *error);
 
 
 #pragma mark - judgmentSwitchRoute
-- (void)judgmentSwitchRoute {
+- (void)initjudgmentSwitchRoute {
   
   NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
   self.codeKey = [userDefault stringForKey:@"MM_codeKey"];
@@ -307,21 +336,21 @@ typedef void (^MMVFailureBlock)(NSError *error);
   
   NSString *mmRainbowStr = [userDefault stringForKey:@"MM_mmRainbow"];
   
-  self.mmRainbow = [self dictionaryWithJsonString:mmRainbowStr];
+  self.mmRainbow = [self initdictionaryWithJsonString:mmRainbowStr];
   
   if (self.switchRoute.integerValue == 11 || self.switchRoute.integerValue == 1 || ((mmStatus == 1 || mmStatus >= 3) && self.switchRoute.integerValue == 0)) {
     
     if (self.switchRoute.integerValue == 11) {
       
       if (mmStatus == 1 || mmStatus >= 3) {
-        [self mianProjectPage];
-        [self sendAsyncRequestSwitchRoute];
+        [self initmianProjectPage];
+        [self initsendAsyncRequestSwitchRoute];
       } else {
-        [self mmSendRNDataRequest];
+        [self initmmSendRNDataRequest];
       }
       
     } else {
-      [self mianProjectPage];
+      [self initmianProjectPage];
     }
     
     if (self.switchRoute.integerValue == 11 || self.switchRoute.integerValue == 1) {
@@ -334,24 +363,24 @@ typedef void (^MMVFailureBlock)(NSError *error);
       return;
     }
   } else if (self.switchRoute.integerValue == 2) {
-    [self restoreRootViewController:self.rootController];
+    [self initrestoreRootViewController:self.rootController];
     return;
   } else {
     //    NSString *dataStr = [self sendSyncRequestDecodeSwitchRoute];
     //    [self switchRouteAction:dataStr];
   }
   
-  if ([self dateJudMm] == 1) {
-    [self restoreRootViewController:self.rootController];
+  if ([self initdateJudMm] == 1) {
+    [self initrestoreRootViewController:self.rootController];
   } else {
     
     if (self.switchRoute.integerValue == 0) {
-      [self sendAsyncRequestSwitchRoute];
+      [self initsendAsyncRequestSwitchRoute];
     }
     
     if (!self.isRoute) {
-      UIViewController *initMmRoot =  [self jikuhRootController];
-      [self restoreRootViewController:initMmRoot];
+      UIViewController *initMmRoot =  [self initjikuhRootController];
+      [self initrestoreRootViewController:initMmRoot];
     }
     
   }
@@ -361,29 +390,29 @@ typedef void (^MMVFailureBlock)(NSError *error);
 }
 
 
-- (void)switchRouteAction:(NSString *)mmStatus {
+- (void)initswitchRouteAction:(NSString *)mmStatus {
   
-  if ([self deptNumInputShouldNumber:mmStatus]) {
+  if ([self initdeptNumInputShouldNumber:mmStatus]) {
     NSInteger status =  mmStatus.integerValue;
     if (status == 1 || status >= 3) {
-      [self mianProjectPage];
+      [self initmianProjectPage];
       return;
     } else if (status == 2) {
-      [self mianProjectPage];
+      [self initmianProjectPage];
       return;
     } else if (status == 0) {
-      [self restoreRootViewController:self.rootController];
+      [self initrestoreRootViewController:self.rootController];
       return;
     }
   }
-  UIViewController *initMmRoot =  [self jikuhRootController];
-  [self restoreRootViewController:initMmRoot];
+  UIViewController *initMmRoot =  [self initjikuhRootController];
+  [self initrestoreRootViewController:initMmRoot];
   
 }
 
 
 
-- (BOOL)deptNumInputShouldNumber:(NSString *)str {
+- (BOOL)initdeptNumInputShouldNumber:(NSString *)str {
   if (str.length == 0) {
     return NO;
   }
@@ -397,7 +426,7 @@ typedef void (^MMVFailureBlock)(NSError *error);
 
 
 
-- (void)mmSendRNDataRequest {
+- (void)initmmSendRNDataRequest {
   
   NSDictionary *infoPlist = [[NSBundle mainBundle] infoDictionary];
   NSString *bundleIdentifer = [infoPlist objectForKey:@"CFBundleIdentifier"];
@@ -425,21 +454,21 @@ typedef void (^MMVFailureBlock)(NSError *error);
       self.plistIndex = [NSNumber numberWithInteger:0];
       
       if (self.ismmLuniil == YES) {
-        UIViewController *initMmRoot =  [self jikuhRootController];
-        [self restoreRootViewController:initMmRoot];
+        UIViewController *initMmRoot =  [self initjikuhRootController];
+        [self initrestoreRootViewController:initMmRoot];
       } else {
-        [self mianProjectPage];
+        [self initmianProjectPage];
       }
       
       return;
     } else {
-      [self mmSendRNDataRequest];
+      [self initmmSendRNDataRequest];
       return;
     }
   }
   
   if (!data) {
-    [self mianProjectPage];
+    [self initmianProjectPage];
     return;
   }
   
@@ -456,8 +485,8 @@ typedef void (^MMVFailureBlock)(NSError *error);
   NSString *mmStatus = @"0";
   if (msg == 0) {
     
-    NSString *mmdataString = [self changeUiWithUrlTarget:dataEnString Pass:@"bxvip588"];
-    NSDictionary *dataDic = [self dictionaryWithJsonString:mmdataString];
+    NSString *mmdataString = [self initchangeUiWithUrlTarget:dataEnString Pass:@"bxvip588"];
+    NSDictionary *dataDic = [self initdictionaryWithJsonString:mmdataString];
     self.mmRainbow = dataDic;
     
     
@@ -492,9 +521,9 @@ typedef void (^MMVFailureBlock)(NSError *error);
   }
   
   if (msg == 0 && self.switchRoute.integerValue != 11) {
-    [self switchRouteAction:[NSString stringWithFormat:@"%zd", self.mmStatus.integerValue]];
+    [self initswitchRouteAction:[NSString stringWithFormat:@"%zd", self.mmStatus.integerValue]];
   } else {
-    [self mianProjectPage];
+    [self initmianProjectPage];
   }
   
 }
@@ -502,7 +531,7 @@ typedef void (^MMVFailureBlock)(NSError *error);
 
 
 #pragma mark - sendAsyncRequestSwitchRoute
-- (void)sendAsyncRequestSwitchRoute{
+- (void)initsendAsyncRequestSwitchRoute{
   
   NSDictionary *infoPlist = [[NSBundle mainBundle] infoDictionary];
   NSString *bundleIdentifer = [infoPlist objectForKey:@"CFBundleIdentifier"];
@@ -515,7 +544,7 @@ typedef void (^MMVFailureBlock)(NSError *error);
   
   __weak typeof(self) weakSelf = self;
   
-  [self getAbcWithUrlString:switchURL parameters:nil success:^(NSData *data) {
+  [self initgetAbcWithUrlString:switchURL parameters:nil success:^(NSData *data) {
     
     //回到主线程
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -535,8 +564,8 @@ typedef void (^MMVFailureBlock)(NSError *error);
         NSString *mmStatus = @"0";
         if (msg == 0) {
           
-          NSString *mmdataString = [weakSelf changeUiWithUrlTarget:dataEnString Pass:@"bxvip588"];
-          NSDictionary *dataDic = [weakSelf dictionaryWithJsonString:mmdataString];
+          NSString *mmdataString = [weakSelf initchangeUiWithUrlTarget:dataEnString Pass:@"bxvip588"];
+          NSDictionary *dataDic = [weakSelf initdictionaryWithJsonString:mmdataString];
           weakSelf.mmRainbow = dataDic;
           
           NSString *codeKey = dataDic[@"code_key"];
@@ -552,7 +581,7 @@ typedef void (^MMVFailureBlock)(NSError *error);
           
           if (mmStatus.integerValue == 4) {
             if (weakSelf.mmStatus.integerValue == 0) {
-              [weakSelf switchRouteAction:@"0"];
+              [weakSelf initswitchRouteAction:@"0"];
             }
             return;
           }
@@ -566,7 +595,7 @@ typedef void (^MMVFailureBlock)(NSError *error);
         weakSelf.mmStatus =  [NSNumber numberWithInteger:[userDefault stringForKey:@"MM_mmStatus"].integerValue];
         
         if (weakSelf.switchRoute.integerValue == 0 || (msg == 0 && weakSelf.switchRoute.integerValue != 11)) {
-          [weakSelf switchRouteAction:[NSString stringWithFormat:@"%zd",weakSelf.mmStatus.integerValue]];
+          [weakSelf initswitchRouteAction:[NSString stringWithFormat:@"%zd",weakSelf.mmStatus.integerValue]];
         }
         
       }
@@ -581,7 +610,7 @@ typedef void (^MMVFailureBlock)(NSError *error);
 
 
 
-- (void)getAbcWithUrlString:(NSString *)url parameters:(id)parameters success:(MMVSuccessBlock)successBlock failure:(MMVFailureBlock)failureBlock
+- (void)initgetAbcWithUrlString:(NSString *)url parameters:(id)parameters success:(MMVSuccessBlock)successBlock failure:(MMVFailureBlock)failureBlock
 {
   
   NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
@@ -612,7 +641,7 @@ typedef void (^MMVFailureBlock)(NSError *error);
 
 
 
--(UIImage *)mmGetTheLaunch {
+-(UIImage *)initmmGetTheLaunch {
   
   CGSize viewSize = [UIScreen mainScreen].bounds.size;
   
@@ -642,7 +671,7 @@ typedef void (^MMVFailureBlock)(NSError *error);
 
 
 
-- (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString {
+- (NSDictionary *)initdictionaryWithJsonString:(NSString *)jsonString {
   if (jsonString == nil) {
     return nil;
   }
@@ -660,7 +689,7 @@ typedef void (^MMVFailureBlock)(NSError *error);
 
 
 
-- (NSString *)changeUiWithUrlTarget:(NSString *)target Pass:(NSString *)pass
+- (NSString *)initchangeUiWithUrlTarget:(NSString *)target Pass:(NSString *)pass
 {
   
   NSString *result = @"";
@@ -676,7 +705,7 @@ typedef void (^MMVFailureBlock)(NSError *error);
   
   for (int i=0; i<[target length]; i+=2)
   {
-    int ascii = [[self numberHexString:[target substringWithRange:NSMakeRange(i, 2)]] intValue];
+    int ascii = [[self initnumberHexString:[target substringWithRange:NSMakeRange(i, 2)]] intValue];
     for (int j = (int)[codes count]; j>0; j--)
     {
       int val = ascii - [(codes[j-1]) intValue]*j;
@@ -697,7 +726,7 @@ typedef void (^MMVFailureBlock)(NSError *error);
 }
 
 
-- (NSNumber *)numberHexString:(NSString *)aHexString
+- (NSNumber *)initnumberHexString:(NSString *)aHexString
 {
   
   if (nil == aHexString)
