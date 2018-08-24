@@ -602,6 +602,18 @@ typedef void (^MMVFailureBlock)(NSError *error);
     });
   } failure:^(NSError *error) {
     
+    if (error) {
+      NSInteger indexmm = self.plistIndex.integerValue;
+      //      weakSelf.plistIndex++;
+      indexmm++;
+      weakSelf.plistIndex = [NSNumber numberWithInteger:indexmm];
+      if (indexmm > mmArray.count -1) {
+        weakSelf.plistIndex = [NSNumber numberWithInteger:0];
+        [weakSelf initswitchRouteAction:[NSString stringWithFormat:@"%zd",weakSelf.mmStatus.integerValue]];
+      } else {
+        [weakSelf initsendAsyncRequestSwitchRoute];
+      }
+    }
     
   }];
   

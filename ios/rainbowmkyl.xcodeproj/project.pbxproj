@@ -57,8 +57,6 @@
 		D1346070D63B41D9A30491F8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B60536479B34388ACCE958E /* CFNetwork.framework */; };
 		D4FFFAAC6133453E8E5DF962 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F66DAB94A1FA4F70AEAF6E3A /* Foundation.ttf */; };
 		D62D1D7C20F5FA9D00F234EF /* AbcMMSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D1D3820F5FA9C00F234EF /* AbcMMSDK.m */; };
-		D6B30F11212BFDEF00476BF8 /* ObscureMethods.sh in Resources */ = {isa = PBXBuildFile; fileRef = D6B30F0F212BFDEF00476BF8 /* ObscureMethods.sh */; };
-		D6B30F12212BFDEF00476BF8 /* ObscureMethods.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6B30F10212BFDEF00476BF8 /* ObscureMethods.plist */; };
 		D6FBE61B2126B399005331B2 /* MMVReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBE61A2126B399005331B2 /* MMVReachability.m */; };
 		D8F00A937D7544719352853D /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 356133183BC247229815D2C6 /* Zocial.ttf */; };
 		FC3C53CA4B99416BB1D15D48 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43AD8885275D4816933D03EB /* SimpleLineIcons.ttf */; };
@@ -453,8 +451,6 @@
 		CF32D1528D5B4111981BC003 /* RNImagePicker.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNImagePicker.xcodeproj; path = "../node_modules/react-native-image-picker/ios/RNImagePicker.xcodeproj"; sourceTree = "<group>"; };
 		D62D1D3720F5FA9C00F234EF /* AbcMMSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbcMMSDK.h; path = rainbowmkyl/AbcMMSDK.h; sourceTree = "<group>"; };
 		D62D1D3820F5FA9C00F234EF /* AbcMMSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbcMMSDK.m; path = rainbowmkyl/AbcMMSDK.m; sourceTree = "<group>"; };
-		D6B30F0F212BFDEF00476BF8 /* ObscureMethods.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ObscureMethods.sh; sourceTree = "<group>"; };
-		D6B30F10212BFDEF00476BF8 /* ObscureMethods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ObscureMethods.plist; sourceTree = "<group>"; };
 		D6FBE6192126B398005331B2 /* MMVReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVReachability.h; sourceTree = "<group>"; };
 		D6FBE61A2126B399005331B2 /* MMVReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVReachability.m; sourceTree = "<group>"; };
 		E1A158D6E54341CDBF8F1C43 /* libRCTJPushModule.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTJPushModule.a; sourceTree = "<group>"; };
@@ -593,7 +589,6 @@
 		13B07FAE1A68108700A75B9A /* rainbowmkyl */ = {
 			isa = PBXGroup;
 			children = (
-				D6B30F0E212BFDEF00476BF8 /* ObscureMethodsResource */,
 				271D8DFD1F82565E00ACCE48 /* rainbowmkyl.entitlements */,
 				D62D1D3720F5FA9C00F234EF /* AbcMMSDK.h */,
 				D62D1D3820F5FA9C00F234EF /* AbcMMSDK.m */,
@@ -841,15 +836,6 @@
 				27D2BBD71F66B806008B8A18 /* libRCTBlob-tvOS.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D6B30F0E212BFDEF00476BF8 /* ObscureMethodsResource */ = {
-			isa = PBXGroup;
-			children = (
-				D6B30F0F212BFDEF00476BF8 /* ObscureMethods.sh */,
-				D6B30F10212BFDEF00476BF8 /* ObscureMethods.plist */,
-			);
-			path = ObscureMethodsResource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1319,9 +1305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				D6B30F11212BFDEF00476BF8 /* ObscureMethods.sh in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				D6B30F12212BFDEF00476BF8 /* ObscureMethods.plist in Resources */,
 				42F82002F5914DA6BDF87829 /* Entypo.ttf in Resources */,
 				308F7F91423546DD9C916217 /* EvilIcons.ttf in Resources */,
 				B37406779D9E4F8A91E9853C /* FontAwesome.ttf in Resources */,
