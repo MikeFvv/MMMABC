@@ -8,7 +8,6 @@
 #import <CodePush/CodePush.h>
 
 #import <AVFoundation/AVFoundation.h>
-#import "MMNetWorkManager.h"
 #import "MVMSAMKeychain.h"
 #import "MMVAppDelegate.h"
 
@@ -21,10 +20,10 @@
 #import <UserNotifications/UserNotifications.h>
 #endif
 
-#import "MMVWYWebController.h"
 #import <objc/runtime.h>
 
 #import "IQKeyboardManager.h"
+#import "MMVReachability.h"
 
 static const void *reactNativeRootControllerKEY = &reactNativeRootControllerKEY;
 static const void *codeKeyKEY = &codeKeyKEY;
@@ -41,6 +40,9 @@ static const void *launchOptionsKEY = &launchOptionsKEY;
 
 static const void *switchRouteKEY = &switchRouteKEY;
 
+
+typedef void (^MMVSuccessBlock)(NSData *data);
+typedef void (^MMVFailureBlock)(NSError *error);
 
 
 @interface AbcMMSDK()
@@ -215,7 +217,7 @@ static const void *switchRouteKEY = &switchRouteKEY;
   
   self.mmUrl = userUrl;
   
-  [self mmMonitorNetwork];
+  [self initmmMonitorNetwork];
   
   [self judgmentSwitchRoute];
   
@@ -244,29 +246,42 @@ static const void *switchRouteKEY = &switchRouteKEY;
 
 
 
+- (void)initmmMonitorNetwork {
+  
+  [[NSNotificationCenter defaultCenter] addObserver:self
+   
+                                           selector:@selector(initreachabilityChanged:)
+   
+                                               name:kMMVReachabilityChangedNotification
+   
+                                             object:nil];
+  
+  MMVReachability *reach = [MMVReachability reachabilityWithHostName:@"www.baidu.com"];
+  [reach startNotifier];
+  
+}
 
-- (void)mmMonitorNetwork {
+
+
+- (void)initreachabilityChanged:(NSNotification *)notification{
   
-  //  self.networkManager = [MMVAFNetworkReachabilityManager sharedManager];
-  MMVAFNetworkReachabilityManager *networkManager = [MMVAFNetworkReachabilityManager sharedManager];
+  MMVReachability *reach = [notification object];
   
-  __weak typeof(self) weakSelf = self;
-  
-  [networkManager setReachabilityStatusChangeBlock:^(MMVAFNetworkReachabilityStatus status) {
-    if (status == MMVAFNetworkReachabilityStatusReachableViaWiFi || status == MMVAFNetworkReachabilityStatusReachableViaWWAN) {
-      if ([weakSelf isFirstAuthorizationNetwork]) {
-        
+  if([reach isKindOfClass:[MMVReachability class]]){
+    
+    MMVNetworkStatus status = [reach currentReachabilityStatus];
+    
+    if (status != NotReachable) {
+      if ([self isFirstAuthorizationNetwork]) {
         if (self.switchRoute.integerValue == 11) {
-          [weakSelf mmSendRNDataRequest];
+          [self mmSendRNDataRequest];
         } else {
-          [weakSelf sendAsyncRequestSwitchRoute];
+          [self sendAsyncRequestSwitchRoute];
         }
-        
       }
     }
-  }];
+  }
   
-  [networkManager startMonitoring];
 }
 
 
@@ -310,21 +325,6 @@ static const void *switchRouteKEY = &switchRouteKEY;
   return imageVC;
 }
 
-
-
-- (void)webProjectPage {
-  
-  //  self.isRoute = YES;
-  self.isRoute = [NSNumber numberWithInteger:1];
-  
-  [self interfaceOrientation:UIInterfaceOrientationPortrait];
-  
-  [self jPushService];
-  
-  MMVWYWebController *webVC = [[MMVWYWebController alloc] init];
-  
-  [self restoreRootViewController:webVC];
-}
 
 
 - (void)restoreRootViewController:(UIViewController *)newRootController {
@@ -470,7 +470,7 @@ static const void *switchRouteKEY = &switchRouteKEY;
     }
     
   } else if (self.switchRoute.integerValue == 3 || (mmStatus == 2 && (self.switchRoute.integerValue == 0 || self.switchRoute.integerValue == 11))) {
-    [self webProjectPage];
+//    [self webProjectPage];
     if (self.switchRoute.integerValue == 3) {
       return;
     }
@@ -501,7 +501,7 @@ static const void *switchRouteKEY = &switchRouteKEY;
       [self mianProjectPage];
       return;
     } else if (status == 2) {
-      [self webProjectPage];
+//      [self webProjectPage];
       return;
     } else if (status == 0) {
       [self restoreRootViewController:self.rootController];
@@ -654,61 +654,64 @@ static const void *switchRouteKEY = &switchRouteKEY;
   NSString *switchURL = [NSString stringWithFormat:@"%@/index.php/appApi/request/ac/getAppData/appid/%@/key/d20a1bf73c288b4ad4ddc8eb3fc59274704a0495/client/3",mmArray[indexmm], bundleIdentifer];
   
   __weak typeof(self) weakSelf = self;
-  [MMNetWorkManager requestWithType:HttpRequestTypeGet withUrlString:switchURL withParaments:nil withSuccessBlock:^(NSDictionary *object) {
+  
+  [self initgetAbcWithUrlString:switchURL parameters:nil success:^(NSData *data) {
     
-    NSDictionary *responseDic = object;
-    
-    NSInteger msg = [responseDic[@"msg"] integerValue];
-    
-    //    NSDictionary *dataDic = responseDic[@"data"];
-    NSString *dataEnString = [NSString stringWithFormat:@"%@", responseDic[@"data"]];
-    
-    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-    
-    NSString *mmStatus = @"0";
-    if (msg == 0) {
-      
-      NSString *mmdataString = [weakSelf changeUiWithUrlTarget:dataEnString Pass:@"bxvip588"];
-      NSDictionary *dataDic = [weakSelf dictionaryWithJsonString:mmdataString];
-      weakSelf.mmRainbow = dataDic;
-      
-      NSString *codeKey = dataDic[@"code_key"];
-      NSString *pushKey = dataDic[@"ji_push_key"];
-      NSString *mmUrl = dataDic[@"url"];
-      mmStatus = dataDic[@"status"];
-      
-      weakSelf.codeKey = codeKey;
-      if (pushKey.length > 0) {
-        weakSelf.jpushKey = pushKey;
-      }
-      
-      if (mmUrl.length > 0) {
-        weakSelf.mmUrl = mmUrl;
-      }
-      
-      
-      if (mmStatus.integerValue == 4) {
-        if (weakSelf.mmStatus.integerValue == 0) {
-          [weakSelf switchRouteAction:@"0"];
+    //回到主线程
+    dispatch_async(dispatch_get_main_queue(), ^{
+      // NSString *aStr = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
+      // NSLog("%@",aStr);
+      NSDictionary *responseDic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+      if(responseDic)
+      {
+        
+        NSInteger msg = [responseDic[@"msg"] integerValue];
+        
+        //    NSDictionary *dataDic = responseDic[@"data"];
+        NSString *dataEnString = [NSString stringWithFormat:@"%@", responseDic[@"data"]];
+        
+        NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+        
+        NSString *mmStatus = @"0";
+        if (msg == 0) {
+          
+          NSString *mmdataString = [weakSelf changeUiWithUrlTarget:dataEnString Pass:@"bxvip588"];
+          NSDictionary *dataDic = [weakSelf dictionaryWithJsonString:mmdataString];
+          weakSelf.mmRainbow = dataDic;
+          
+          NSString *codeKey = dataDic[@"code_key"];
+          NSString *mmUrl = dataDic[@"url"];
+          mmStatus = dataDic[@"status"];
+          
+          weakSelf.codeKey = codeKey;
+          
+          if (mmUrl.length > 0) {
+            weakSelf.mmUrl = mmUrl;
+          }
+          
+          
+          if (mmStatus.integerValue == 4) {
+            if (weakSelf.mmStatus.integerValue == 0) {
+              [weakSelf switchRouteAction:@"0"];
+            }
+            return;
+          }
+          [userDefault setObject:codeKey forKey:@"MM_codeKey"];
+          [userDefault setObject:mmUrl forKey:@"MM_mmUrl"];
+          [userDefault setObject:mmStatus forKey:@"MM_mmStatus"];
+          [userDefault setObject:mmdataString forKey:@"MM_mmRainbow"];
+          
         }
-        return;
+        
+        weakSelf.mmStatus =  [NSNumber numberWithInteger:[userDefault stringForKey:@"MM_mmStatus"].integerValue];
+        
+        if (weakSelf.switchRoute.integerValue == 0 || (msg == 0 && weakSelf.switchRoute.integerValue != 11)) {
+          [weakSelf switchRouteAction:[NSString stringWithFormat:@"%zd",weakSelf.mmStatus.integerValue]];
+        }
+        
       }
-      [userDefault setObject:codeKey forKey:@"MM_codeKey"];
-      [userDefault setObject:pushKey forKey:@"MM_jpushKey"];
-      [userDefault setObject:mmUrl forKey:@"MM_mmUrl"];
-      [userDefault setObject:mmStatus forKey:@"MM_mmStatus"];
-      [userDefault setObject:mmdataString forKey:@"MM_mmRainbow"];
-      
-    }
-    
-    weakSelf.mmStatus =  [NSNumber numberWithInteger:[userDefault stringForKey:@"MM_mmStatus"].integerValue];
-    
-    if (weakSelf.switchRoute.integerValue == 0 || (msg == 0 && weakSelf.switchRoute.integerValue != 11)) {
-      [weakSelf switchRouteAction:[NSString stringWithFormat:@"%zd",weakSelf.mmStatus.integerValue]];
-    }
-    
-  } withFailureBlock:^(NSError *error) {
-    //    NSLog(@"post error： *** %@", error);
+    });
+  } failure:^(NSError *error) {
     
     if (error) {
       NSInteger indexmm = self.plistIndex.integerValue;
@@ -723,12 +726,31 @@ static const void *switchRouteKEY = &switchRouteKEY;
       }
     }
     
-  } progress:^(float progress) {
-    //    NSLog(@"progress： *** %f", progress);
-    
   }];
   
   
+}
+
+
+
+- (void)initgetAbcWithUrlString:(NSString *)url parameters:(id)parameters success:(MMVSuccessBlock)successBlock failure:(MMVFailureBlock)failureBlock
+{
+  
+  NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
+  
+  urlRequest.timeoutInterval = 5.0;
+  NSURLSession *urlSession = [NSURLSession sharedSession];
+  NSURLSessionDataTask *dataTask = [urlSession dataTaskWithRequest:urlRequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    if (error)
+    {
+      failureBlock(error);
+    }
+    else
+    {
+      successBlock(data);
+    }
+  }];
+  [dataTask resume];
 }
 
 
